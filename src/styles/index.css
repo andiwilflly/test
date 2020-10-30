@@ -1,0 +1,28 @@
+/* https://habr.com/ru/post/456302 */
+
+@import "reset.css";
+@import "grid.css"; /* http://flexboxgrid.com */
+@import "variables.css";
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    background: aquamarine;
+}
+
+.layout {
+    flex: 1;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 800px;
+    min-width: 600px;
+    background: darkkhaki;
+}
+
+footer {
+    background: var(--color-primary);
+}
