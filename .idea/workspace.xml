@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9fcff2fb-385d-4e41-8f39-758c7f7d681b" name="Default Changelist" comment="" />
+    <list default="true" id="9fcff2fb-385d-4e41-8f39-758c7f7d681b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/_api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/craco.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/craco.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1jaotjSfWfBKguoPpp6Egjlz6cc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -16,11 +33,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -31,10 +55,43 @@
       <option name="presentableId" value="Default" />
       <updated>1604051780347</updated>
       <workItem from="1604051781732" duration="179000" />
+      <workItem from="1604052017615" duration="574000" />
+      <workItem from="1604053028090" duration="1437000" />
+      <workItem from="1604054915947" duration="684000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1419" height="205" key="GridCell.Tab.0.bottom" timestamp="1604052247175">
+      <screen x="0" y="23" width="1440" height="803" />
+    </state>
+    <state width="1419" height="205" key="GridCell.Tab.0.bottom/0.23.1440.803@0.23.1440.803" timestamp="1604052247175" />
+    <state width="1419" height="205" key="GridCell.Tab.0.center" timestamp="1604052247174">
+      <screen x="0" y="23" width="1440" height="803" />
+    </state>
+    <state width="1419" height="205" key="GridCell.Tab.0.center/0.23.1440.803@0.23.1440.803" timestamp="1604052247174" />
+    <state width="1419" height="205" key="GridCell.Tab.0.left" timestamp="1604052247173">
+      <screen x="0" y="23" width="1440" height="803" />
+    </state>
+    <state width="1419" height="205" key="GridCell.Tab.0.left/0.23.1440.803@0.23.1440.803" timestamp="1604052247173" />
+    <state width="1419" height="205" key="GridCell.Tab.0.right" timestamp="1604052247175">
+      <screen x="0" y="23" width="1440" height="803" />
+    </state>
+    <state width="1419" height="205" key="GridCell.Tab.0.right/0.23.1440.803@0.23.1440.803" timestamp="1604052247175" />
+    <state x="499" y="133" key="RollbackChangesDialog" timestamp="1604055366956">
+      <screen x="0" y="23" width="1440" height="803" />
+    </state>
+    <state x="499" y="133" key="RollbackChangesDialog/0.23.1440.803@0.23.1440.803" timestamp="1604055366956" />
+    <state x="100" y="124" width="1240" height="599" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1604055408717">
+      <screen x="0" y="23" width="1440" height="803" />
+    </state>
+    <state x="100" y="124" width="1240" height="599" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1440.803@0.23.1440.803" timestamp="1604055408717" />
+    <state x="421" y="178" width="598" height="490" key="find.popup" timestamp="1604054266359">
+      <screen x="0" y="23" width="1440" height="803" />
+    </state>
+    <state x="421" y="178" width="598" height="490" key="find.popup/0.23.1440.803@0.23.1440.803" timestamp="1604054266359" />
   </component>
 </project>

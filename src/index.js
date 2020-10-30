@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+// Mock API
+import "API/api";
+// Components
+import App from './App';
 // Styles
 import "styles/index.css";
 

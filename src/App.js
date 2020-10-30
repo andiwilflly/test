@@ -5,15 +5,26 @@ import Layout from "components/Layout.component";
 import Footer from "components/Footer.component";
 
 
-function App() {
+class App extends React.Component {
 
-    return (
-        <>
-            <Header />
-            <Layout />
-            <Footer />
-        </>
-    );
+    componentDidMount() {
+        window.fetch("/api/users")
+            .then((res) => res.json())
+            .then((json) => {
+                console.log(json, 4242);
+            })
+    }
+
+    render() {
+
+        return (
+            <>
+                <Header />
+                <Layout />
+                <Footer />
+            </>
+        );
+    }
 }
 
 export default App;

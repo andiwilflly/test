@@ -1,8 +1,8 @@
 import React from "react";
-// Components
-import Button from "@monorepo/core/components/Button.component";
+import { observer } from "mobx-react";
 
 
+@observer
 class Footer extends React.Component {
 
     render() {
@@ -10,7 +10,6 @@ class Footer extends React.Component {
         return (
             <footer>
                 FOOTER
-                <Button>Footer button</Button>
             </footer>
         );
     }
