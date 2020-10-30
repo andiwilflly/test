@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "@reach/router";
+// Styles
+import "styles/scoped/Header.scoped.css";
 
 
 class Header extends React.Component {
 
     render() {
-
         return (
             <header>
                 <nav>

@@ -8,7 +8,7 @@ import Footer from "components/Footer.component";
 class App extends React.Component {
 
     componentDidMount() {
-        window.fetch("/api/users")
+        window.fetch("/api/user")
             .then((res) => res.json())
             .then((json) => {
                 console.log(json, 4242);

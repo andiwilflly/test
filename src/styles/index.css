@@ -1,7 +1,6 @@
 /* https://habr.com/ru/post/456302 */
 
 @import "reset.css";
-@import "grid.css"; /* http://flexboxgrid.com */
 @import "variables.css";
 
 body {
@@ -15,21 +14,4 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-header {
-    background: aquamarine;
-}
-
-.layout {
-    flex: 1;
-    height: 100%;
-    margin: 0 auto;
-    max-width: 800px;
-    min-width: 600px;
-    background: darkkhaki;
-}
-
-footer {
-    background: var(--color-primary);
 }

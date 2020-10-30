@@ -5,6 +5,7 @@ const path = require("path");
 module.exports = {
     webpack: {
         alias: {
+            'src': path.resolve(__dirname, './src'),
             'API': path.resolve(__dirname, './src/_api'),
             'components': path.resolve(__dirname, './src/components'),
             'models':     path.resolve(__dirname, './src/models'),
@@ -16,6 +17,11 @@ module.exports = {
             return webpackConfig;
         }
     },
+    plugins: [
+        {
+            plugin: require('craco-plugin-scoped-css'),
+        },
+    ],
     babel: {
         "plugins": [
             ["@babel/plugin-proposal-decorators", { "legacy": true }],
