@@ -1,4 +1,6 @@
 import React from "react";
+// botAI
+import "./components/botAI/botAI";
 // Components
 import Header from "components/Header.component";
 import Layout from "components/Layout.component";

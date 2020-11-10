@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
+import "src/i18n/i18n";
 // Mock API
 import "API/api";
 // Components
