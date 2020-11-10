@@ -3,7 +3,7 @@ import { observer } from "mobx-react";
 import MediaQuery from 'react-responsive';
 import Carousel from 'nuka-carousel';
 // Styles
-import "styles/scoped/Layout.scoped.css";
+import "styles/scoped/Layout.scoped.scss";
 // Components
 import Router from 'components/@router/Router.component';
 

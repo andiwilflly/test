@@ -10,7 +10,7 @@ class HomePage extends React.Component {
         return (
             <section>
                 HomePage
-                <Img src={`${process.env.PUBLIC_URL}/svg/app-store.svg`} />
+                <Img src={`${process.env.PUBLIC_URL}/svg/app-store.svg`} width={20} />
                 <Img src={`${process.env.PUBLIC_URL}/svg/google-play.svg`} />
                 <Img src={`${process.env.PUBLIC_URL}/svg/clock.svg`} />
                 <Img src={`${process.env.PUBLIC_URL}/svg/logo.svg`} />

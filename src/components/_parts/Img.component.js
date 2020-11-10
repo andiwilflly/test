@@ -8,13 +8,22 @@ class ImgComponent extends React.Component {
 
     static propTypes = {
         src: PropTypes.string.isRequired,
-        alt: PropTypes.string
+        alt: PropTypes.string,
+        width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+        height: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
+    }
+
+
+    static defaultProps = {
+        width: 'auto',
+        height: 'auto'
     }
 
 
     render() {
         return (
             <Img
+                style={{ width: this.props.width, height: this.props.height }}
                 placeholder={<div>placeholder</div>}
                 src={ this.props.src }
                 error={<div>error loading image</div>}
