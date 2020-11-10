@@ -24,14 +24,14 @@ class Layout extends React.Component {
                     <p>524</p>
                 </MediaQuery>
 
-                    <Carousel initialSlideHeight={200}>
-                        <img src="https://via.placeholder.com/400/ffffff/c0392b/&text=slide1" />
-                        <img src="https://via.placeholder.com/400/ffffff/c0392b/&text=slide2" />
-                        <img src="https://via.placeholder.com/400/ffffff/c0392b/&text=slide3" />
-                        <img src="https://via.placeholder.com/400/ffffff/c0392b/&text=slide4" />
-                        <img src="https://via.placeholder.com/400/ffffff/c0392b/&text=slide5" />
-                        <img src="https://via.placeholder.com/400/ffffff/c0392b/&text=slide6" />
-                    </Carousel>
+                    {/*<Carousel initialSlideHeight={200}>*/}
+                    {/*    <img src="https://via.placeholder.com/400/ffffff/c0392b/&text=slide1" />*/}
+                    {/*    <img src="https://via.placeholder.com/400/ffffff/c0392b/&text=slide2" />*/}
+                    {/*    <img src="https://via.placeholder.com/400/ffffff/c0392b/&text=slide3" />*/}
+                    {/*    <img src="https://via.placeholder.com/400/ffffff/c0392b/&text=slide4" />*/}
+                    {/*    <img src="https://via.placeholder.com/400/ffffff/c0392b/&text=slide5" />*/}
+                    {/*    <img src="https://via.placeholder.com/400/ffffff/c0392b/&text=slide6" />*/}
+                    {/*</Carousel>*/}
 
 
                 <Router />

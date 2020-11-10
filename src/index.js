@@ -7,7 +7,7 @@ import "API/api";
 // Components
 import App from './App';
 // Styles
-import "styles/index.css";
+import "styles/index.scss";
 
 
 ReactDOM.render(
