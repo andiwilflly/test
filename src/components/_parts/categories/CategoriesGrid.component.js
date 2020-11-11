@@ -52,11 +52,7 @@ class CategoriesGrid extends React.Component {
 
                         return (
                             <div key={i}
-                                 style={{
-                                     padding: 5,
-                                     background: h === 1 ? 'lightgray' : 'orange',
-                                     gridArea: `${y1} / ${x1} / ${y2} / ${x2}`
-                                 }}>
+                                 style={{ gridArea: `${y1} / ${x1} / ${y2} / ${x2}` }}>
                                 <CategoryCard categoryId={i} />
                             </div>
                         );

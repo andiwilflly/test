@@ -10,6 +10,7 @@ class ImgComponent extends React.Component {
         src: PropTypes.string.isRequired,
         alt: PropTypes.string,
         className: PropTypes.string,
+        style: PropTypes.object,
         width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
         height: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
     }
@@ -17,6 +18,7 @@ class ImgComponent extends React.Component {
 
     static defaultProps = {
         className: '',
+        style: {},
         width: 'auto',
         height: 'auto'
     }
@@ -25,7 +27,11 @@ class ImgComponent extends React.Component {
     render() {
         return (
             <Img className={ this.props.className }
-                 style={{ width: this.props.width, height: this.props.height }}
+                 style={{
+                     width: this.props.width,
+                     height: this.props.height,
+                     ...this.props.style,
+                 }}
                  placeholder={<div>placeholder</div>}
                  src={ this.props.src }
                  error={<div>error loading image</div>}

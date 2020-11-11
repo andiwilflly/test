@@ -18,9 +18,9 @@ class Header extends React.Component {
     render() {
         return (
             <header>
-                <div  className="logo">
+                <Link to='/' className="logo clickable">
                     <Img src={`${process.env.PUBLIC_URL}/svg/logo.svg`} width={115} height={38} />
-                </div>
+                </Link>
 
                 <Link to="/" className="link nowrap"><T>Главная страница</T></Link>
                 <Link to="dashboard" className="link nowrap"><T>Про нас</T></Link>
