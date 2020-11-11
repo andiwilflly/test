@@ -44,7 +44,7 @@ class CategoriesGrid extends React.Component {
                 <div style={{
                     display: 'grid',
                     gridTemplateColumns: `repeat(${this.itemsInRow}, 1fr)`,
-                    gridTemplateRows: `repeat(${this.itemsInRow}, 1fr)`,
+                    gridTemplateRows: `repeat(${Math.ceil(this.grid.length / this.itemsInRow)}, 1fr)`,
                     gridColumnGap: '20px',
                     gridRowGap: '20px'
                 }}>
@@ -66,7 +66,7 @@ class CategoriesGrid extends React.Component {
                         return (
                             <div key={i}
                                  style={{ gridArea: `${y1} / ${x1} / ${y2} / ${x2}` }}>
-                                <CategoryCard categoryId={i} />
+                                <CategoryCard categoryId={''+i} />
                             </div>
                         );
                     }) }

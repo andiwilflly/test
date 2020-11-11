@@ -30,13 +30,15 @@ class MainBanners extends React.Component {
 
     render() {
         return (
-            <div style={{ marginBottom: 100 }}>
-                <Carousel width='100%' autoplay withoutControls pauseOnHover slideWidth={1}>
-                    { this.banners.map(banner => {
-                        return <Img src={`${process.env.PUBLIC_URL}${banner.src}`} />
-                    })}
-                </Carousel>
-            </div>
+            <Carousel width='100%'
+                      autoplay
+                      withoutControls
+                      pauseOnHover
+                      slideWidth={1}>
+                { this.banners.map(banner => {
+                    return <Img src={`${process.env.PUBLIC_URL}${banner.src}`} />
+                })}
+            </Carousel>
         );
     }
 }

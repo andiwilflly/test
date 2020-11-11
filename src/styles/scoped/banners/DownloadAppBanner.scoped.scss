@@ -1,0 +1,39 @@
+@import "../../variables";
+
+.banner {
+	border-radius: 20px;
+	height: 448px;
+	padding: 121px 0 0 108px;
+	box-sizing: border-box;
+	position: relative;
+
+	background: $blue-light url("../../images/png/app-burger.png") no-repeat top right;
+}
+
+.banner-close {
+	position: absolute;
+	left: 30px;
+	top: 30px;
+}
+
+.banner-title {
+	font-size: 40px;
+	font-weight: bold;
+	line-height: 48px;
+	color: $black-light;
+}
+
+.banner-subtitle {
+	font-size: 16px;
+	color: $gray-dark;
+	line-height: 22px;
+	margin-top: 11px;
+}
+
+.banner-buttons {
+	margin-top: 73px;
+}
+
+.banner-app-store {
+	margin-right: 20px;
+}

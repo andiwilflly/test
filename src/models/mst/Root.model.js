@@ -3,10 +3,12 @@ import { types } from 'mobx-state-tree';
 // Models
 import CoreModel from "src/models/mst/Core.model";
 import AuthModel from "src/models/mst/Auth.model";
+import SettingsModel from "src/models/mst/Settings.model";
 
 
 const RootModel = {
-    auth: AuthModel
+    auth: AuthModel,
+    settings: SettingsModel
 };
 
 
