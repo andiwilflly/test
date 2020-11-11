@@ -11,7 +11,7 @@ class HomePage extends React.Component {
         return (
             <>
                 <MainBanners />
-                <CategoriesGrid />
+                <CategoriesGrid cols={4} categoriesIds={ [0,1,2,3,4,5,6] } />
                 <br/>
                 <br/>
                 HomePage

@@ -23,12 +23,13 @@ class Header extends React.Component {
                 </Link>
 
                 <Link to="/" className="link nowrap"><T>Главная страница</T></Link>
-                <Link to="dashboard" className="link nowrap"><T>Про нас</T></Link>
-                <Link to="dashboard" className="link nowrap"><T>Контакты</T></Link>
-                <Link to="dashboard" className="link nowrap flex">
+                <Link to="about-us" className="link nowrap"><T>Про нас</T></Link>
+                <Link to="contacts" className="link nowrap"><T>Контакты</T></Link>
+                <div className='nowrap flex:center'>
                     <Img src={`${process.env.PUBLIC_URL}/svg/location.svg`} width={16} height={22} />
+                    &nbsp;&nbsp;
                     <T>Львов</T>
-                </Link>
+                </div>
 
                 <div className="controls flex:around:center">
                     <div className="search">
