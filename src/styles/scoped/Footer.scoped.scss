@@ -1,0 +1,10 @@
+@import "../variables";
+
+
+footer {
+    background: $green-light;
+    height: 450px;
+    position: relative;
+    left: -$page-side-offset;
+    width: calc(100vw - 15px);
+}

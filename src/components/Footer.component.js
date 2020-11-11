@@ -1,7 +1,7 @@
 import React from "react";
 import { observer } from "mobx-react";
 // Styles
-import 'styles/scoped/Footer.scoped.css';
+import 'styles/scoped/Footer.scoped.scss';
 
 
 @observer

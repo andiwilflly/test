@@ -20,6 +20,7 @@ body {
 
 #root {
     height: 100%;
+    margin: 0 $page-side-offset;
     display: flex;
     flex-direction: column;
 }

@@ -2,15 +2,16 @@ import React from "react";
 // Components
 import Img from "src/components/_parts/Img.component";
 import MainBanners from "src/components/_parts/MainBanners.component";
-
+import CategoriesGrid from "src/components/_parts/categories/CategoriesGrid.component";
 
 
 class HomePage extends React.Component {
 
     render() {
         return (
-            <section>
+            <>
                 <MainBanners />
+                <CategoriesGrid />
                 <br/>
                 <br/>
                 HomePage
@@ -25,7 +26,7 @@ class HomePage extends React.Component {
                 <Img src={`${process.env.PUBLIC_URL}/svg/location.svg`} />
                 <Img src={`${process.env.PUBLIC_URL}/svg/round-arrow-left.svg`} />
                 <Img src={`${process.env.PUBLIC_URL}/svg/round-arrow-right.svg`} />
-            </section>
+            </>
         );
     }
 }
