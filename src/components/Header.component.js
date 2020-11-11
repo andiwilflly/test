@@ -39,13 +39,13 @@ class Header extends React.Component {
                         <input type="text" />
                     </div>
 
-                    <div className="clickable">
+                    <Link to="cart" className="clickable">
                         <Img src={`${process.env.PUBLIC_URL}/svg/cart.svg`} width={24} height={24} />
-                    </div>
+                    </Link>
 
-                    <div className="clickable">
+                    <Link to="profile" className="clickable">
                         <Img src={`${process.env.PUBLIC_URL}/svg/profile.svg`} width={24} height={24} />
-                    </div>
+                    </Link>
                 </div>
             </header>
         );

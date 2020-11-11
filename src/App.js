@@ -21,7 +21,6 @@ class App extends React.Component {
             <>
                 <Header />
                 <Layout />
-                <Footer />
             </>
         );
     }
