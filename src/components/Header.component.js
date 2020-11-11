@@ -18,17 +18,17 @@ class Header extends React.Component {
     render() {
         return (
             <header>
-                <Img src={`${process.env.PUBLIC_URL}/svg/logo.svg`} width={115} height={38} />
+                <div  className="logo">
+                    <Img src={`${process.env.PUBLIC_URL}/svg/logo.svg`} width={115} height={38} />
+                </div>
 
-                <nav className="flex:between:center">
-                    <Link to="/" className="link nowrap"><T>Главная страница</T></Link>
-                    <Link to="dashboard" className="link nowrap"><T>Про нас</T></Link>
-                    <Link to="dashboard" className="link nowrap"><T>Контакты</T></Link>
-                    <Link to="dashboard" className="link nowrap flex">
-                        <Img src={`${process.env.PUBLIC_URL}/svg/location.svg`} width={16} height={22} />
-                        <T>Львов</T>
-                    </Link>
-                </nav>
+                <Link to="/" className="link nowrap"><T>Главная страница</T></Link>
+                <Link to="dashboard" className="link nowrap"><T>Про нас</T></Link>
+                <Link to="dashboard" className="link nowrap"><T>Контакты</T></Link>
+                <Link to="dashboard" className="link nowrap flex">
+                    <Img src={`${process.env.PUBLIC_URL}/svg/location.svg`} width={16} height={22} />
+                    <T>Львов</T>
+                </Link>
 
                 <div className="controls flex:around:center">
                     <div className="search">

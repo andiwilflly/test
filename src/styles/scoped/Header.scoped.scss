@@ -2,17 +2,19 @@
 
 header {
     height: $page-top-offset;
-    margin: $page-top-offset $page-side-offset 0 $page-side-offset;
+    margin: $page-top-offset auto 0 auto;
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     max-width: $container-max-width;
+    font-size: 20px;
 }
 
-nav {
-    margin-left: 73px;
-    margin-right: 84px;
-    width: 100%;
+.logo {
+    position: relative;
+    top: 6px;
+    width: 11.5%;
 }
 
 .controls {

@@ -9,12 +9,14 @@ class ImgComponent extends React.Component {
     static propTypes = {
         src: PropTypes.string.isRequired,
         alt: PropTypes.string,
+        className: PropTypes.string,
         width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
         height: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
     }
 
 
     static defaultProps = {
+        className: '',
         width: 'auto',
         height: 'auto'
     }
@@ -22,12 +24,12 @@ class ImgComponent extends React.Component {
 
     render() {
         return (
-            <Img
-                style={{ width: this.props.width, height: this.props.height }}
-                placeholder={<div>placeholder</div>}
-                src={ this.props.src }
-                error={<div>error loading image</div>}
-                alt={ this.props.alt || this.props.src }
+            <Img className={ this.props.className }
+                 style={{ width: this.props.width, height: this.props.height }}
+                 placeholder={<div>placeholder</div>}
+                 src={ this.props.src }
+                 error={<div>error loading image</div>}
+                 alt={ this.props.alt || this.props.src }
             />
         );
     }
