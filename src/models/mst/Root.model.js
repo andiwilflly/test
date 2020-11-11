@@ -1,11 +1,12 @@
 // MobX
 import { types } from 'mobx-state-tree';
 // Models
-import CoreModel from "./Core.model";
+import CoreModel from "src/models/mst/Core.model";
+import AuthModel from "src/models/mst/Auth.model";
 
 
 const RootModel = {
-    user: types.string
+    auth: AuthModel
 };
 
 
