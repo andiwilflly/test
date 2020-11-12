@@ -4,8 +4,10 @@ import { types } from 'mobx-state-tree';
 import CoreModel from "src/models/mst/Core.model";
 
 
-const SettingsModel = {
-    SHOW_DOWNLOAD_APP_BANNER: types.boolean
+const CategoryModel = {
+    id: types.identifier,
+    name: types.string,
+    img: types.string
 };
 
 
@@ -26,7 +28,7 @@ const volatile = (self)=> {
 };
 
 
-export default types.compose("SettingsModel", CoreModel, types.model(SettingsModel)
+export default types.compose("CategoryModel", CoreModel, types.model(CategoryModel)
                     .actions(actions)
                     .views(views)
                     .volatile(volatile));

@@ -3,11 +3,13 @@ import { types } from 'mobx-state-tree';
 // Models
 import CoreModel from "src/models/mst/Core.model";
 import AuthModel from "src/models/mst/Auth.model";
+import CategoriesModel from "src/models/mst/categories/Categories.model";
 import SettingsModel from "src/models/mst/Settings.model";
 
 
 const RootModel = {
     auth: AuthModel,
+    categories: CategoriesModel,
     settings: SettingsModel
 };
 

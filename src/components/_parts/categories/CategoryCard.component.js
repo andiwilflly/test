@@ -19,6 +19,7 @@ class CategoryCard extends React.Component {
                 <div className="category-img">
                     <Img src={`${process.env.PUBLIC_URL}/static/category1.jpg`}
                          style={{ objectFit: 'cover' }}
+                         width='100%'
                          height='100%' />
                 </div>
                 <div className="category-name flex:center">Name</div>

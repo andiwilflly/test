@@ -16,6 +16,7 @@ class Layout extends React.Component {
                 <Router />
                 <hr/>
                 - store.mediaQuery [mobile, tablet, desktop]
+                - axios
                 <hr/>
             </section>
         );

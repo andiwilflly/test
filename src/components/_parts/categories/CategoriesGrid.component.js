@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+// MobX
 import { observer } from "mobx-react";
+// Store
+import store from "src/store";
 // Components
 import CategoryCard from "src/components/_parts/categories/CategoryCard.component"
 
@@ -17,6 +20,10 @@ class CategoriesGrid extends React.Component {
         cols: 4,
     }
 
+
+    componentDidMount() {
+        store.categories.fetchAll();
+    }
 
 
     render() {
