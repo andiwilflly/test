@@ -1,7 +1,6 @@
 import React from 'react';
 // MobX
 import { types } from 'mobx-state-tree';
-import { values } from 'mobx';
 // Models
 import AlertModel from "src/models/mst/alerts/Alert.model";
 // Store
@@ -45,7 +44,6 @@ const actions = (self)=> {
 
 const views = (self)=> {
 	return {
-		get list() { return values(self.all); }
 	};
 };
 

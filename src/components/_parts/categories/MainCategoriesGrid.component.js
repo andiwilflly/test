@@ -2,17 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 // MobX
 import { observer } from "mobx-react";
+import { computed } from "mobx";
 // Store
 import store from "src/store";
 // Components
-import CategoryCard from "src/components/_parts/categories/CategoryCard.component"
+import MainCategoryCard from "src/components/_parts/categories/MainCategoryCard.component"
 
 
 @observer
-class CategoriesGrid extends React.Component {
+class MainCategoriesGrid extends React.Component {
 
     static propTypes = {
-        categoriesIds: PropTypes.array.isRequired,
         cols: PropTypes.number
     }
 
@@ -22,12 +22,15 @@ class CategoriesGrid extends React.Component {
 
 
     componentDidMount() {
-        store.categories.fetchAll();
+        store.mainCategories.fetchAll();
     }
 
 
+    @computed get mainCategories() { return store.mainCategories.list };
+
+
     render() {
-        let arr = new Array(this.props.categoriesIds.length).fill({ w:1, h:1 });
+        let arr = new Array(this.mainCategories.length).fill({ w:1, h:1 });
         const itemsInRow = arr.length < this.props.cols ? arr.length : this.props.cols;
         const emptySlots = Math.ceil(arr.length/itemsInRow) * itemsInRow - arr.length;
         let currX = { 0: 0 };
@@ -66,7 +69,7 @@ class CategoriesGrid extends React.Component {
                         return (
                             <div key={i}
                                  style={{ gridArea: `${y1} / ${x1} / ${y2} / ${x2}` }}>
-                                <CategoryCard categoryId={''+i} />
+                                <MainCategoryCard categoryId={ this.mainCategories[i].id } />
                             </div>
                         );
                     }) }
@@ -76,4 +79,4 @@ class CategoriesGrid extends React.Component {
     }
 }
 
-export default CategoriesGrid;
+export default MainCategoriesGrid;

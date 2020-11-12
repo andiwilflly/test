@@ -24,7 +24,7 @@ class MainBanners extends React.Component {
     async getBanners() {
         let response = await store.auth.fetch("/api/banners");
         response = await response.json();
-        this.banners = response;
+        this.banners = response.banners;
     }
 
 
@@ -36,7 +36,8 @@ class MainBanners extends React.Component {
                       pauseOnHover
                       slideWidth={1}>
                 { this.banners.map(banner => {
-                    return <Img key={banner.src} src={`${process.env.PUBLIC_URL}${banner.src}`} />
+                    return <Img key={banner.restaurantId}
+                                src={`${process.env.PUBLIC_URL}${banner.bannerUrl}`} />
                 })}
             </Carousel>
         );

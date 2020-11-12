@@ -1,8 +1,12 @@
-[
-	{
-		"src": "/static/main_banner.jpg"
-	},
-	{
-		"src": "/static/main_banner.jpg"
-	}
-]
+{
+	"banners": [
+		{
+			"bannerUrl": "https://victoriagardens.com.ua/sites/default/files/tenant/noa_asia_special/logo-39735032_525466294577879_7071324320382844928_n_1.png",
+			"restaurantId": "ca77d1ab-d413-4181-8582-7a3799324245"
+		},
+		{
+			"bannerUrl": "https://i.ytimg.com/vi/KI2eJNXBUnk/maxresdefault.jpg",
+			"restaurantId": "3fbf6d4f-de6e-42fb-b2a8-f23ba8d50cef"
+		}
+	]
+}

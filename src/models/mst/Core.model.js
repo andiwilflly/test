@@ -1,5 +1,6 @@
 // MobX
 import { types } from 'mobx-state-tree';
+import { values } from "mobx";
 
 
 const CoreModel = {
@@ -50,6 +51,7 @@ const actions = (self)=> {
 
 const views = (self)=> {
 	return {
+		get list() { return values(self.all); }
 	};
 };
 
