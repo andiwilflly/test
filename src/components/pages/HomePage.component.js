@@ -7,6 +7,7 @@ import Img from "src/components/_parts/Img.component";
 import MainBanners from "src/components/_parts/banners/MainBanners.component";
 import DownloadAppBanner from "src/components/_parts/banners/DownloadAppBanner.component";
 import CategoriesGrid from "src/components/_parts/categories/CategoriesGrid.component";
+import CategoriesOld from "src/components/_parts/Categories_old.component";
 import { Desktop, Tablet, Mobile } from "src/components/_parts/MediaQuery.component";
 
 
@@ -36,20 +37,6 @@ class HomePage extends React.Component {
                         <DownloadAppBanner />
                     </>
                     : null }
-
-                <br/>
-                <br/>
-                <Img src={`${process.env.PUBLIC_URL}/svg/app-store.svg`} width={20} />
-                <Img src={`${process.env.PUBLIC_URL}/svg/google-play.svg`} />
-                <Img src={`${process.env.PUBLIC_URL}/svg/clock.svg`} />
-                <Img src={`${process.env.PUBLIC_URL}/svg/logo.svg`} />
-                <Img src={`${process.env.PUBLIC_URL}/svg/close.svg`} />
-                <Img src={`${process.env.PUBLIC_URL}/svg/search.svg`} />
-                <Img src={`${process.env.PUBLIC_URL}/svg/cart.svg`} />
-                <Img src={`${process.env.PUBLIC_URL}/svg/profile.svg`} />
-                <Img src={`${process.env.PUBLIC_URL}/svg/location.svg`} />
-                <Img src={`${process.env.PUBLIC_URL}/svg/round-arrow-left.svg`} />
-                <Img src={`${process.env.PUBLIC_URL}/svg/round-arrow-right.svg`} />
             </>
         );
     }

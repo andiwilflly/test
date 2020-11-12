@@ -1,14 +1,15 @@
 import React from 'react';
 import { observable } from "mobx";
 import { observer } from "mobx-react";
+import CategoryCard from "src/components/_parts/categories/CategoryCard.component";
 
 
 @observer
 class App extends React.Component {
 
 
-    @observable mediaItemsInRow = 4;
-    @observable arrLength = 12;
+    @observable mediaItemsInRow = 3;
+    @observable arrLength = 7;
 
 
     render() {
@@ -67,8 +68,6 @@ class App extends React.Component {
                         return (
                             <div key={i}
                                  style={{
-                                     padding: 5,
-                                     background: h === 1 ? 'lightgray' : 'orange',
                                      gridArea: `${y1} / ${x1} / ${y2} / ${x2}`
                                  }}>
                                 {row} | y:{y1} | y:{y2}

@@ -36,7 +36,7 @@ class MainBanners extends React.Component {
                       pauseOnHover
                       slideWidth={1}>
                 { this.banners.map(banner => {
-                    return <Img src={`${process.env.PUBLIC_URL}${banner.src}`} />
+                    return <Img key={banner.src} src={`${process.env.PUBLIC_URL}${banner.src}`} />
                 })}
             </Carousel>
         );
