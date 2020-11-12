@@ -19,7 +19,7 @@ i18next
             },
             ru: {
                 translation: ru
-            },
+            }
         }
     });
 

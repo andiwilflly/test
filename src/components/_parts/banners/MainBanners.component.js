@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "@reach/router";
 import Carousel from 'nuka-carousel';
 // MobX
 import { observer } from "mobx-react";
@@ -36,8 +37,13 @@ class MainBanners extends React.Component {
                       pauseOnHover
                       slideWidth={1}>
                 { this.banners.map(banner => {
-                    return <Img key={banner.restaurantId}
-                                src={`${process.env.PUBLIC_URL}${banner.bannerUrl}`} />
+                    return (
+                        <Link style={{ display: 'block' }}
+                              className="clickable"
+                              to={`restaurant/${banner.restaurantId}`} key={banner.restaurantId}>
+                            <Img src={`${process.env.PUBLIC_URL}${banner.bannerUrl}`} width="100%" />
+                        </Link>
+                    )
                 })}
             </Carousel>
         );

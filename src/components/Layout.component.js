@@ -15,8 +15,14 @@ class Layout extends React.Component {
             <section className="layout">
                 <Router />
                 <hr/>
-                - store.mediaQuery [mobile, tablet, desktop]
-                - axios
+                <pre>
+                    - store.mediaQuery [mobile, tablet, desktop]
+                    - axios
+
+                    - restaurant
+                    - dish
+                    - offer
+                </pre>
                 <hr/>
             </section>
         );
