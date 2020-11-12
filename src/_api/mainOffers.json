@@ -1,42 +1,150 @@
-[
-	{
-		"name": "Пицца 5",
-		"discount": "-70%",
-		"oldPrice": "196",
-		"newPrice": "45",
-		"type": "saving",
-		"img": "https://www.gastronom.ru/binfiles/images/20180515/b03545cb.jpg",
-		"startTime": 1605184602575,
-		"endTime": 1605184602575
-	},
-	{
-		"type": "breakfast",
-		"name": "Пицца 1",
-		"discount": "-10%",
-		"oldPrice": "36",
-		"newPrice": "45",
-		"img": "https://www.gastronom.ru/binfiles/images/20180515/b03545cb.jpg",
-		"startTime": 1605184602575,
-		"endTime": 1605184602575
-	},
-	{
-		"type": "lunch",
-		"name": "Пицца",
-		"discount": "-30%",
-		"oldPrice": "96",
-		"newPrice": "45",
-		"img": "https://www.gastronom.ru/binfiles/images/20180330/b0a5843a.jpg",
-		"startTime": 1605184602575,
-		"endTime": 1605184602575
-	},
-	{
-		"type": "dinner",
-		"name": "Пицца 2",
-		"discount": "-40%",
-		"oldPrice": "636",
-		"newPrice": "115",
-		"img": "https://www.gastronom.ru/binfiles/images/20180515/b03545cb.jpg",
-		"startTime": 1605184602575,
-		"endTime": 1605184602575
-	}
-]
+{
+	"saving": [
+		{
+			"id": 11,
+			"name": "Пицца",
+			"discount": "-40%",
+			"oldPrice": "636",
+			"newPrice": "115",
+			"img": "https://www.gastronom.ru/binfiles/images/20180515/b03545cb.jpg",
+			"startTime": 1605184602575,
+			"endTime": 1605184602575
+		},
+		{
+			"id": 12,
+			"name": "Пицца",
+			"discount": "-40%",
+			"oldPrice": "23",
+			"newPrice": "12",
+			"img": "https://www.gastronom.ru/binfiles/images/20180515/b03545cb.jpg",
+			"startTime": 1605184602575,
+			"endTime": 1605184602575
+		},
+		{
+			"id": 13,
+			"name": "Пицца",
+			"discount": "-40%",
+			"oldPrice": "135",
+			"newPrice": "115",
+			"img": "https://www.gastronom.ru/binfiles/images/20180515/b03545cb.jpg",
+			"startTime": 1605184602575,
+			"endTime": 1605184602575
+		}
+	],
+	"breakfast": [
+		{
+			"id": 20,
+			"name": "Пицца 1",
+			"discount": "-10%",
+			"oldPrice": "36",
+			"newPrice": "45",
+			"img": "https://www.gastronom.ru/binfiles/images/20180515/b03545cb.jpg",
+			"startTime": 1605184602575,
+			"endTime": 1605184602575
+		},
+		{
+			"id": 21,
+			"name": "Пицца 1",
+			"discount": "-10%",
+			"oldPrice": "36",
+			"newPrice": "45",
+			"img": "https://www.gastronom.ru/binfiles/images/20180515/b03545cb.jpg",
+			"startTime": 1605184602575,
+			"endTime": 1605184602575
+		},
+		{
+			"id": 22,
+			"name": "Пицца 1",
+			"discount": "-10%",
+			"oldPrice": "36",
+			"newPrice": "45",
+			"img": "https://www.gastronom.ru/binfiles/images/20180515/b03545cb.jpg",
+			"startTime": 1605184602575,
+			"endTime": 1605184602575
+		},
+		{
+			"id": 23,
+			"name": "Пицца 1",
+			"discount": "-10%",
+			"oldPrice": "36",
+			"newPrice": "45",
+			"img": "https://www.gastronom.ru/binfiles/images/20180515/b03545cb.jpg",
+			"startTime": 1605184602575,
+			"endTime": 1605184602575
+		}
+	],
+	"dinner": [
+		{
+			"id": 30,
+			"name": "Пицца 2",
+			"discount": "-40%",
+			"oldPrice": "636",
+			"newPrice": "115",
+			"img": "https://www.gastronom.ru/binfiles/images/20180515/b03545cb.jpg",
+			"startTime": 1605184602575,
+			"endTime": 1605184602575
+		},
+		{
+			"id": 31,
+			"name": "Пицца 2",
+			"discount": "-80%",
+			"oldPrice": "2",
+			"newPrice": "1",
+			"img": "https://www.gastronom.ru/binfiles/images/20180515/b03545cb.jpg",
+			"startTime": 1605184602575,
+			"endTime": 1605184602575
+		},
+		{
+			"id": 32,
+			"name": "Пицца",
+			"discount": "-10%",
+			"oldPrice": "636",
+			"newPrice": "115",
+			"img": "https://www.gastronom.ru/binfiles/images/20180515/b03545cb.jpg",
+			"startTime": 1605184602575,
+			"endTime": 1605184602575
+		}
+	],
+	"supper": [
+		{
+			"id": 41,
+			"name": "Пицца",
+			"discount": "-30%",
+			"oldPrice": "96",
+			"newPrice": "45",
+			"img": "https://www.gastronom.ru/binfiles/images/20180330/b0a5843a.jpg",
+			"startTime": 1605184602575,
+			"endTime": 1605184602575
+		},
+		{
+			"id": 42,
+			"name": "Пицца",
+			"discount": "-30%",
+			"oldPrice": "96",
+			"newPrice": "45",
+			"img": "https://www.gastronom.ru/binfiles/images/20180330/b0a5843a.jpg",
+			"startTime": 1605184602575,
+			"endTime": 1605184602575
+		},
+		{
+			"id": 43,
+			"name": "Пицца",
+			"discount": "-30%",
+			"oldPrice": "96",
+			"newPrice": "45",
+			"img": "https://www.gastronom.ru/binfiles/images/20180330/b0a5843a.jpg",
+			"startTime": 1605184602575,
+			"endTime": 1605184602575
+		},
+		{
+			"id": 44,
+			"name": "Пицца",
+			"discount": "-30%",
+			"oldPrice": "96",
+			"newPrice": "45",
+			"img": "https://www.gastronom.ru/binfiles/images/20180330/b0a5843a.jpg",
+			"startTime": 1605184602575,
+			"endTime": 1605184602575
+		}
+	]
+}

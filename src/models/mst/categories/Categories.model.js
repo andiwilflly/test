@@ -15,14 +15,11 @@ const CategoriesModel = {
 const actions = (self)=> {
     return {
 
-        create(category = {}) {
-            self.all.set(category.id, category);
-        },
-
-
         async fetchAll() {
             let response = await store.auth.fetch('api/topCategories');
             response = await response.json();
+
+            self.deleteAll();
             response.forEach(category => self.create(category));
         }
     };

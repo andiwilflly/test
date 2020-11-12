@@ -1,0 +1,60 @@
+@import "../../variables";
+
+.offer-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  background: $white;
+}
+
+.offer-time {
+  background: $green-light;
+  border-radius: 20px 0 20px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 46px;
+  width: 150px;
+  color: $white;
+  font-weight: 600;
+  font-size: 12px;
+
+  > span {
+    margin-left: 11px;
+  }
+}
+
+.offer-discount {
+  background: $yellow;
+  border-radius: 50%;
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  font-size: 16px;
+  font-weight: 700;
+  color: $white;
+  top: 8px;
+  right: 16px;
+}
+
+.offer-details {
+  height: 56px;
+  background: $white;
+  padding: 0 30px 0 16px;
+}
+
+.offer-price {
+  width: 180px;
+}
+
+.offer-old-price {
+  font-size: 14px;
+  text-decoration: line-through;
+  margin-right: 20px;
+  letter-spacing: 0;
+}
+
+.offer-new-price {
+  font-size: 16px;
+  letter-spacing: 0;
+}

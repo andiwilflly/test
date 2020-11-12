@@ -15,15 +15,11 @@ const MainCategoriesModel = {
 const actions = (self)=> {
     return {
 
-        create(mainCategory = {}) {
-            self.all.set(mainCategory.id, mainCategory);
-        },
-
-
         async fetchAll() {
             let response = await store.auth.fetch('api/topCategories');
             response = await response.json();
 
+            self.deleteAll();
             [
                 response.primaryCategory,
                 ...response.secondaryCategories,

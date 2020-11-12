@@ -9,6 +9,10 @@ const CoreModel = {
 
 const actions = (self)=> {
 	return {
+		create(prop = {}) {
+			self.all.set(prop.id, prop);
+		},
+
 		update(updates = {}) {
 			Object.keys(self).forEach((fieldName)=> {
 				// Case when we update [#lazy] props (#someProp -> someProp).
@@ -26,6 +30,11 @@ const actions = (self)=> {
 
 		delete(id) {
 			self.all.delete(id);
+		},
+
+
+		deleteAll() {
+			self.all.clear();
 		},
 
 
