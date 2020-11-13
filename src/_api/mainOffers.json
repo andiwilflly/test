@@ -1,150 +1,125 @@
 {
 	"saving": [
 		{
-			"id": 11,
-			"name": "Пицца",
-			"discount": "-40%",
-			"oldPrice": "636",
-			"newPrice": "115",
-			"img": "https://www.gastronom.ru/binfiles/images/20180515/b03545cb.jpg",
-			"startTime": 1605184602575,
-			"endTime": 1605184602575
+			"dishId": "0ed61bf1-a42a-4d4d-ad7d-0a9afc789559",
+			"price": 15.00,
+			"discountPrice": 10,
+			"discount": 30,
+			"imageUrl": "https://www.gastronom.ru/binfiles/images/20180515/b03545cb.jpg",
+			"startDateTime": "2020-11-13T00:00:00",
+			"endDateTime": "2020-11-13T23:59:00",
+			"translations": [
+				{
+					"name": "Dish2",
+					"lang": "en"
+				},
+				{
+					"name": "Страва2",
+					"lang": "ua"
+				},
+				{
+					"name": "Блюдо2",
+					"lang": "ru"
+				}
+			]
 		},
 		{
-			"id": 12,
-			"name": "Пицца",
-			"discount": "-40%",
-			"oldPrice": "23",
-			"newPrice": "12",
-			"img": "https://www.gastronom.ru/binfiles/images/20180515/b03545cb.jpg",
-			"startTime": 1605184602575,
-			"endTime": 1605184602575
-		},
-		{
-			"id": 13,
-			"name": "Пицца",
-			"discount": "-40%",
-			"oldPrice": "135",
-			"newPrice": "115",
-			"img": "https://www.gastronom.ru/binfiles/images/20180515/b03545cb.jpg",
-			"startTime": 1605184602575,
-			"endTime": 1605184602575
+			"dishId": "0ed61bf1-a42a-4d4d-ad7d-0a9afc789551",
+			"price": 11.00,
+			"discountPrice": 70,
+			"discount": 80,
+			"imageUrl": "https://www.gastronom.ru/binfiles/images/20180515/b03545cb.jpg",
+			"startDateTime": "2020-11-13T00:00:00",
+			"endDateTime": "2020-11-13T23:59:00",
+			"translations": [
+				{
+					"name": "Dish3",
+					"lang": "en"
+				},
+				{
+					"name": "Страва3",
+					"lang": "ua"
+				},
+				{
+					"name": "Блюдо3",
+					"lang": "ru"
+				}
+			]
 		}
 	],
 	"breakfast": [
 		{
-			"id": 20,
-			"name": "Пицца 1",
-			"discount": "-10%",
-			"oldPrice": "36",
-			"newPrice": "45",
-			"img": "https://www.gastronom.ru/binfiles/images/20180515/b03545cb.jpg",
-			"startTime": 1605184602575,
-			"endTime": 1605184602575
-		},
-		{
-			"id": 21,
-			"name": "Пицца 1",
-			"discount": "-10%",
-			"oldPrice": "36",
-			"newPrice": "45",
-			"img": "https://www.gastronom.ru/binfiles/images/20180515/b03545cb.jpg",
-			"startTime": 1605184602575,
-			"endTime": 1605184602575
-		},
-		{
-			"id": 22,
-			"name": "Пицца 1",
-			"discount": "-10%",
-			"oldPrice": "36",
-			"newPrice": "45",
-			"img": "https://www.gastronom.ru/binfiles/images/20180515/b03545cb.jpg",
-			"startTime": 1605184602575,
-			"endTime": 1605184602575
-		},
-		{
-			"id": 23,
-			"name": "Пицца 1",
-			"discount": "-10%",
-			"oldPrice": "36",
-			"newPrice": "45",
-			"img": "https://www.gastronom.ru/binfiles/images/20180515/b03545cb.jpg",
-			"startTime": 1605184602575,
-			"endTime": 1605184602575
+			"dishId": "afb9c860-9f5d-440d-8426-f2d2d02dd1d3",
+			"price": 20.00,
+			"discountPrice": 14,
+			"discount": 30,
+			"imageUrl": "https://reactnativecode.com/wp-content/uploads/2018/02/Default_Image_Thumbnail.png",
+			"startDateTime": "2020-11-13T00:00:00",
+			"endDateTime": "2020-11-13T23:59:00",
+			"translations": [
+				{
+					"name": "Блюдо3",
+					"lang": "ru"
+				},
+				{
+					"name": "Dish3",
+					"lang": "en"
+				},
+				{
+					"name": "Страва3",
+					"lang": "ua"
+				}
+			]
 		}
 	],
 	"dinner": [
 		{
-			"id": 30,
-			"name": "Пицца 2",
-			"discount": "-40%",
-			"oldPrice": "636",
-			"newPrice": "115",
-			"img": "https://www.gastronom.ru/binfiles/images/20180515/b03545cb.jpg",
-			"startTime": 1605184602575,
-			"endTime": 1605184602575
-		},
-		{
-			"id": 31,
-			"name": "Пицца 2",
-			"discount": "-80%",
-			"oldPrice": "2",
-			"newPrice": "1",
-			"img": "https://www.gastronom.ru/binfiles/images/20180515/b03545cb.jpg",
-			"startTime": 1605184602575,
-			"endTime": 1605184602575
-		},
-		{
-			"id": 32,
-			"name": "Пицца",
-			"discount": "-10%",
-			"oldPrice": "636",
-			"newPrice": "115",
-			"img": "https://www.gastronom.ru/binfiles/images/20180515/b03545cb.jpg",
-			"startTime": 1605184602575,
-			"endTime": 1605184602575
+			"dishId": "afb9c860-9f5d-440d-8426-f2d2d02dd1d3",
+			"price": 20.00,
+			"discountPrice": 14,
+			"discount": 30,
+			"imageUrl": "https://reactnativecode.com/wp-content/uploads/2018/02/Default_Image_Thumbnail.png",
+			"startDateTime": "2020-11-13T00:00:00",
+			"endDateTime": "2020-11-13T23:59:00",
+			"translations": [
+				{
+					"name": "Блюдо3",
+					"lang": "ru"
+				},
+				{
+					"name": "Dish3",
+					"lang": "en"
+				},
+				{
+					"name": "Страва3",
+					"lang": "ua"
+				}
+			]
 		}
 	],
 	"supper": [
 		{
-			"id": 41,
-			"name": "Пицца",
-			"discount": "-30%",
-			"oldPrice": "96",
-			"newPrice": "45",
-			"img": "https://www.gastronom.ru/binfiles/images/20180330/b0a5843a.jpg",
-			"startTime": 1605184602575,
-			"endTime": 1605184602575
-		},
-		{
-			"id": 42,
-			"name": "Пицца",
-			"discount": "-30%",
-			"oldPrice": "96",
-			"newPrice": "45",
-			"img": "https://www.gastronom.ru/binfiles/images/20180330/b0a5843a.jpg",
-			"startTime": 1605184602575,
-			"endTime": 1605184602575
-		},
-		{
-			"id": 43,
-			"name": "Пицца",
-			"discount": "-30%",
-			"oldPrice": "96",
-			"newPrice": "45",
-			"img": "https://www.gastronom.ru/binfiles/images/20180330/b0a5843a.jpg",
-			"startTime": 1605184602575,
-			"endTime": 1605184602575
-		},
-		{
-			"id": 44,
-			"name": "Пицца",
-			"discount": "-30%",
-			"oldPrice": "96",
-			"newPrice": "45",
-			"img": "https://www.gastronom.ru/binfiles/images/20180330/b0a5843a.jpg",
-			"startTime": 1605184602575,
-			"endTime": 1605184602575
+			"dishId": "afb9c860-9f5d-440d-8426-f2d2d02dd1d3",
+			"price": 20.00,
+			"discountPrice": 14,
+			"discount": 30,
+			"imageUrl": "https://reactnativecode.com/wp-content/uploads/2018/02/Default_Image_Thumbnail.png",
+			"startDateTime": "2020-11-13T00:00:00",
+			"endDateTime": "2020-11-13T23:59:00",
+			"translations": [
+				{
+					"name": "Блюдо3",
+					"lang": "ru"
+				},
+				{
+					"name": "Dish3",
+					"lang": "en"
+				},
+				{
+					"name": "Страва3",
+					"lang": "ua"
+				}
+			]
 		}
 	]
 }

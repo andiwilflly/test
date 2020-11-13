@@ -17,7 +17,6 @@ class MainOffersSavingSlider extends React.Component {
     render() {
         return (
             <div className="offers">
-                MainOffersSavingSlider
                 <OffersSlider offers={ this.props.offers } slidesToShow={2} />
             </div>
         );

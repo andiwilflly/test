@@ -4,7 +4,7 @@ import RootModel from "src/models/mst/Root.model";
 
 
 const store = RootModel.create({
-    lang: i18next.language,
+    lang: i18next.language.split('-')[0] || 'en',
     auth: {},
     mainCategories: {},
     categories: {},

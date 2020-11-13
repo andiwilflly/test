@@ -2,34 +2,22 @@ import React from "react";
 import Carousel from 'nuka-carousel';
 // MobX
 import { observer } from "mobx-react";
-import { observable } from "mobx";
-// Store
-import store from "src/store";
+// Decorators
+import WithSWR from "src/decorators/WithSWR.decorator";
 // Components
 import Link from "src/components/Link.component";
 import Img from "src/components/_parts/Img.component";
 
 
+@WithSWR({
+    url: "/api/banners",
+    name: 'banners'
+})
 @observer
 class MainBanners extends React.Component {
 
-    componentDidMount() {
-        this.getBanners();
-    }
-
-
-    @observable banners = [];
-
 
     $carousel = null;
-
-
-
-    async getBanners() {
-        let response = await store.auth.fetch("/api/banners");
-        response = await response.json();
-        this.banners = response.banners;
-    }
 
 
     handleLoadImage = ()=> {
@@ -45,7 +33,7 @@ class MainBanners extends React.Component {
                       withoutControls
                       pauseOnHover
                       slideWidth={1}>
-                { this.banners.map(banner => {
+                { this.props.banners.banners.map(banner => {
                     return (
                         <Link style={{ display: 'block' }}
                               className="clickable"

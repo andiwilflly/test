@@ -4,6 +4,8 @@ import PropTypes from "prop-types";
 import "src/styles/scoped/offers/OffersCard.scoped.scss";
 // MobX
 import { observer } from "mobx-react";
+// Store
+import store from "src/store";
 // Components
 import Img from "src/components/_parts/Img.component";
 
@@ -23,24 +25,31 @@ class OfferCard extends React.Component {
 
 
 
+    get startDateTime() { return new Date(this.props.offer.startDateTime).toLocaleTimeString().split(':') }
+    get endDateTime() { return new Date(this.props.offer.endDateTime).toLocaleTimeString().split(':') }
+
+
+
     render() {
         return (
             <div className="offer-card">
                 <div className="offer-time flex:center">
                     <Img src={`${process.env.PUBLIC_URL}/svg/clock.svg`} width={21} height={21} />
-                    <span>15:00 - 20:00</span>
+                    <span>{ this.startDateTime[0] }:{ this.startDateTime[1] } - { this.endDateTime[0] }:{ this.endDateTime[1] }</span>
                 </div>
 
                 <div className="offer-discount flex:center">
-                    { this.props.offer.discount }
+                    -{ this.props.offer.discount }%
                 </div>
-                <Img src={ this.props.offer.img } onLoad={ ()=> this.props.$carousel?.setDimensions() } width="100%" />
+                <Img src={ this.props.offer.imageUrl } onLoad={ ()=> this.props.$carousel?.setDimensions() } width="100%" />
 
                 <div className="offer-details flex:between:center">
-                    <div className="offer-name">{ this.props.offer.name }</div>
+                    <div className="offer-name">
+                        { this.props.offer.translations.find(translation => translation.lang === store.lang).name }
+                    </div>
                     <div className="offer-price flex:between:center">
-                        <div className="offer-old-price">{ this.props.offer.oldPrice } грн</div>
-                        <div className="offer-new-price">{ this.props.offer.newPrice } грн</div>
+                        <div className="offer-old-price">{ this.props.offer.discountPrice } грн</div>
+                        <div className="offer-new-price">{ this.props.offer.price } грн</div>
                     </div>
                 </div>
             </div>

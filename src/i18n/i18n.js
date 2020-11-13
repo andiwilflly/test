@@ -11,7 +11,7 @@ i18next
     .use(initReactI18next)
     .init({
         // lng: 'en',
-        debug: true,
+        debug: false,
         ns: ['common'],
         defaultNS: 'common',
         otherLanguages: ['en','ru'],
