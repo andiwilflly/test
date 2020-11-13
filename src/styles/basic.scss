@@ -1,0 +1,112 @@
+@import "variables";
+
+
+h3 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+input {
+  border: none;
+  outline: none;
+  font-size: $input-font-size;
+}
+
+
+button {
+  border: none;
+  outline: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+
+.link {
+  color: $black-light;
+  text-decoration: none;
+
+  img {
+    margin-right: 12px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+  }
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+
+.clickable {
+  cursor: pointer;
+  transform: translate(0, 0);
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    transform: translate(1px, 1px);
+  }
+}
+
+.clickable:disabled {
+  cursor: auto;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+
+@each $size in $fonts-sizes {
+  .fs#{$size} {
+    font-size: #{$size}px;
+  }
+}
+
+@each $size in $margin-sizes {
+  .p#{$size} {
+    padding: #{$size}px;
+  }
+  .pr#{$size} {
+    padding-right: #{$size}px;
+  }
+  .pl#{$size} {
+    padding-left: #{$size}px;
+  }
+  .pt#{$size} {
+    padding-top: #{$size}px;
+  }
+  .pb#{$size} {
+    padding-bottom: #{$size}px;
+  }
+
+  .m#{$size} {
+    margin: #{$size}px;
+  }
+  .mr#{$size} {
+    margin-right: #{$size}px;
+  }
+  .ml#{$size} {
+    margin-left: #{$size}px;
+  }
+  .mt#{$size} {
+    margin-top: #{$size}px;
+  }
+  .mb#{$size} {
+    margin-bottom: #{$size}px;
+  }
+}

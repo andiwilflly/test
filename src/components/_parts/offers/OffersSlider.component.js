@@ -43,6 +43,7 @@ class OffersSlider extends React.Component {
                 <Carousel width='100%'
                           ref={ this.onSliderReady }
                           cellSpacing={20}
+                          heightMode="max"
                           slidesToShow={ this.props.slidesToShow }
                           slidesToScroll={ this.props.slidesToScroll }
                           slideWidth={1}>

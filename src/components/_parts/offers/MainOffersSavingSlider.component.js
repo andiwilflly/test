@@ -21,7 +21,7 @@ class MainOffersSavingSlider extends React.Component {
         return (
             <div className="saving-offer">
                 <div className="saving-info">
-                    <div className="saving-title">С нами ты экономишь</div>
+                    <h3>С нами ты экономишь</h3>
 
                     <div className="saving-description">
                         Asd ekwr jkwenf cksdnck sdkc msdcks dmkfner terg fd??

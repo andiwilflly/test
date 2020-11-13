@@ -5,6 +5,7 @@ import { Link } from "@reach/router";
 const NavLink = props => (
 	<Link {...props}
 		getProps={(params) => {
+			window.scrollTo(0,0);
 			return {
 				style: {
 					...props.style,

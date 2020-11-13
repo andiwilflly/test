@@ -24,6 +24,29 @@
 			]
 		},
 		{
+			"dishId": "afb9c860-9f5d-440d-8426-f2d2d02dd1d3",
+			"price": 20.00,
+			"discountPrice": 14,
+			"discount": 30,
+			"imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS1cNG5TQUn4JnFhX-kmjpzRUDwD_FBcsPKzw&usqp=CAU",
+			"startDateTime": "2020-11-13T00:00:00",
+			"endDateTime": "2020-11-13T23:59:00",
+			"translations": [
+				{
+					"name": "Блюдо3",
+					"lang": "ru"
+				},
+				{
+					"name": "Dish3",
+					"lang": "en"
+				},
+				{
+					"name": "Страва3",
+					"lang": "ua"
+				}
+			]
+		},
+		{
 			"dishId": "0ed61bf1-a42a-4d4d-ad7d-0a9afc789551",
 			"price": 11.00,
 			"discountPrice": 70,
@@ -49,11 +72,34 @@
 	],
 	"breakfast": [
 		{
+			"dishId": "0ed61bf1-a42a-4d4d-ad7d-0a9afc789551",
+			"price": 11.00,
+			"discountPrice": 70,
+			"discount": 80,
+			"imageUrl": "https://www.gastronom.ru/binfiles/images/20180515/b03545cb.jpg",
+			"startDateTime": "2020-11-13T00:00:00",
+			"endDateTime": "2020-11-13T23:59:00",
+			"translations": [
+				{
+					"name": "Dish3",
+					"lang": "en"
+				},
+				{
+					"name": "Страва3",
+					"lang": "ua"
+				},
+				{
+					"name": "Блюдо3",
+					"lang": "ru"
+				}
+			]
+		},
+		{
 			"dishId": "afb9c860-9f5d-440d-8426-f2d2d02dd1d3",
 			"price": 20.00,
 			"discountPrice": 14,
 			"discount": 30,
-			"imageUrl": "https://reactnativecode.com/wp-content/uploads/2018/02/Default_Image_Thumbnail.png",
+			"imageUrl": "https://media2.s-nbcnews.com/j/newscms/2019_50/3144056/191211-korean-beef-bulgogi-ew-118p_33b77532b5ffe02105bb8fe860ab36c4.fit-1240w.jpg",
 			"startDateTime": "2020-11-13T00:00:00",
 			"endDateTime": "2020-11-13T23:59:00",
 			"translations": [
@@ -68,6 +114,29 @@
 				{
 					"name": "Страва3",
 					"lang": "ua"
+				}
+			]
+		},
+		{
+			"dishId": "0ed61bf1-a42a-4d4d-ad7d-0a9afc789551",
+			"price": 11.00,
+			"discountPrice": 70,
+			"discount": 80,
+			"imageUrl": "https://www.gastronom.ru/binfiles/images/20180515/b03545cb.jpg",
+			"startDateTime": "2020-11-13T00:00:00",
+			"endDateTime": "2020-11-13T23:59:00",
+			"translations": [
+				{
+					"name": "Dish3",
+					"lang": "en"
+				},
+				{
+					"name": "Страва3",
+					"lang": "ua"
+				},
+				{
+					"name": "Блюдо3",
+					"lang": "ru"
 				}
 			]
 		}
@@ -78,7 +147,7 @@
 			"price": 20.00,
 			"discountPrice": 14,
 			"discount": 30,
-			"imageUrl": "https://reactnativecode.com/wp-content/uploads/2018/02/Default_Image_Thumbnail.png",
+			"imageUrl": "https://cdn.cnn.com/cnnnext/dam/assets/160929095729-essential-spanish-dish-fideua-brindisa.jpg",
 			"startDateTime": "2020-11-13T00:00:00",
 			"endDateTime": "2020-11-13T23:59:00",
 			"translations": [
@@ -95,6 +164,75 @@
 					"lang": "ua"
 				}
 			]
+		},
+		{
+			"dishId": "0ed61bf1-a42a-4d4d-ad7d-0a9afc789551",
+			"price": 11.00,
+			"discountPrice": 70,
+			"discount": 80,
+			"imageUrl": "https://www.gastronom.ru/binfiles/images/20180515/b03545cb.jpg",
+			"startDateTime": "2020-11-13T00:00:00",
+			"endDateTime": "2020-11-13T23:59:00",
+			"translations": [
+				{
+					"name": "Dish3",
+					"lang": "en"
+				},
+				{
+					"name": "Страва3",
+					"lang": "ua"
+				},
+				{
+					"name": "Блюдо3",
+					"lang": "ru"
+				}
+			]
+		},
+		{
+			"dishId": "afb9c860-9f5d-440d-8426-f2d2d02dd1d3",
+			"price": 20.00,
+			"discountPrice": 14,
+			"discount": 30,
+			"imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS1cNG5TQUn4JnFhX-kmjpzRUDwD_FBcsPKzw&usqp=CAU",
+			"startDateTime": "2020-11-13T00:00:00",
+			"endDateTime": "2020-11-13T23:59:00",
+			"translations": [
+				{
+					"name": "Блюдо3",
+					"lang": "ru"
+				},
+				{
+					"name": "Dish3",
+					"lang": "en"
+				},
+				{
+					"name": "Страва3",
+					"lang": "ua"
+				}
+			]
+		},
+		{
+			"dishId": "0ed61bf1-a42a-4d4d-ad7d-0a9afc789551",
+			"price": 11.00,
+			"discountPrice": 11,
+			"discount": 80,
+			"imageUrl": "https://www.gastronom.ru/binfiles/images/20180515/b03545cb.jpg",
+			"startDateTime": "2020-11-13T00:00:00",
+			"endDateTime": "2020-11-13T23:59:00",
+			"translations": [
+				{
+					"name": "Dish3",
+					"lang": "en"
+				},
+				{
+					"name": "Страва3",
+					"lang": "ua"
+				},
+				{
+					"name": "Блюдо3",
+					"lang": "ru"
+				}
+			]
 		}
 	],
 	"supper": [
@@ -103,7 +241,30 @@
 			"price": 20.00,
 			"discountPrice": 14,
 			"discount": 30,
-			"imageUrl": "https://reactnativecode.com/wp-content/uploads/2018/02/Default_Image_Thumbnail.png",
+			"imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS1cNG5TQUn4JnFhX-kmjpzRUDwD_FBcsPKzw&usqp=CAU",
+			"startDateTime": "2020-11-13T00:00:00",
+			"endDateTime": "2020-11-13T23:59:00",
+			"translations": [
+				{
+					"name": "Блюдо3",
+					"lang": "ru"
+				},
+				{
+					"name": "Dish3",
+					"lang": "en"
+				},
+				{
+					"name": "Страва3",
+					"lang": "ua"
+				}
+			]
+		},
+		{
+			"dishId": "afb9c860-9f5d-440d-8426-f2d2d02dd1d3",
+			"price": 20.00,
+			"discountPrice": 14,
+			"discount": 30,
+			"imageUrl": "https://cdn.cnn.com/cnnnext/dam/assets/160929095729-essential-spanish-dish-fideua-brindisa.jpg",
 			"startDateTime": "2020-11-13T00:00:00",
 			"endDateTime": "2020-11-13T23:59:00",
 			"translations": [

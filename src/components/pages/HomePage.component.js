@@ -37,8 +37,9 @@ class HomePage extends React.Component {
                     </>
                     : null }
 
-                <div style={{ height: 100 }} />
+                <div style={{ height: 110 }} />
                 <MainOffers />
+                <div style={{ height: 300 }} />
             </>
         );
     }

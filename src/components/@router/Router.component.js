@@ -15,8 +15,9 @@ export default function RouterComponent() {
         <React.Suspense fallback={ <div>Loading...</div> }>
             <Router>
                 <Redirect from="/" to={ `/${store.lang}`} noThrow />
+
                 <HomePage path="/:lang" />
-                <TestPage path="dashboard" />
+
                 <NotFound default />
             </Router>
         </React.Suspense>

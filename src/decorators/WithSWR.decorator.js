@@ -1,5 +1,6 @@
 import React from 'react';
 import useSWR from 'swr';
+import store from "../store";
 
 
 const WithSWR = function(settings = {}) {
@@ -11,7 +12,7 @@ const WithSWR = function(settings = {}) {
 };
 
 
-const fetcher = (...args) => fetch(...args).then(res => res.json());
+const fetcher = (...args) => store.auth.fetch(...args).then(res => res.json());
 
 
 
