@@ -7,8 +7,9 @@ const NavLink = props => (
 		getProps={(params) => {
 			return {
 				style: {
-					// textDecoration: isCurrent ? "underline" : "none",
-					fontWeight: params.isCurrent ? 600 : 400,
+					...props.style,
+					textDecoration: params.isCurrent ? "underline" : "none",
+					// fontWeight: params.isCurrent ? 600 : 400,
 				}
 			};
 		}}

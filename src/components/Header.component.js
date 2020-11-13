@@ -47,13 +47,13 @@ class Header extends React.Component {
         console.log('controlsWidth', this.controlsWidth)
         return (
             <header>
-                <Link to='/' className="logo clickable">
+                <Link to={ `${store.lang}` } className="logo clickable">
                     <Img src={`${process.env.PUBLIC_URL}/svg/logo.svg`} width={115} height={38} />
                 </Link>
 
-                <Link to="/" className="link nowrap"><T>Главная страница</T></Link>
-                <Link to="about-us" className="link nowrap"><T>Про нас</T></Link>
-                <Link to="contacts" className="link nowrap"><T>Контакты</T></Link>
+                <Link to={ `${store.lang}` } className="link nowrap"><T>Главная страница</T></Link>
+                <Link to={ `${store.lang}/about-us` } className="link nowrap"><T>Про нас</T></Link>
+                <Link to={ `${store.lang}/contacts` } className="link nowrap"><T>Контакты</T></Link>
                 <div className='nowrap flex:center'>
                     <Img src={`${process.env.PUBLIC_URL}/svg/location.svg`} width={16} height={22} />
                     &nbsp;&nbsp;
@@ -77,11 +77,11 @@ class Header extends React.Component {
                                }} />
                     </form>
 
-                    <Link to="cart" className="clickable">
+                    <Link to={ `${store.lang}/cart` } className="clickable">
                         <Img src={`${process.env.PUBLIC_URL}/svg/cart.svg`} width={24} height={24} />
                     </Link>
 
-                    <Link to="profile" className="clickable">
+                    <Link to={ `${store.lang}/profile` } className="clickable">
                         <Img src={`${process.env.PUBLIC_URL}/svg/profile.svg`} width={24} height={24} />
                     </Link>
 
