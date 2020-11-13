@@ -38,7 +38,6 @@ class OffersSlider extends React.Component {
 
 
     render() {
-        console.log(this.props.offers, '23');
         return (
             <div className="offers-slider">
                 <Carousel width='100%'

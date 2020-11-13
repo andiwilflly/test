@@ -8,6 +8,7 @@
     "craco-plugin-scoped-css": "^1.1.0",
     "dotenv": "^8.2.0",
     "i18next": "^19.8.3",
+    "i18next-browser-languagedetector": "^6.0.1",
     "miragejs": "^0.1.41",
     "mobx": "^5.15.7",
     "mobx-react": "^6.1.8",
@@ -27,7 +28,7 @@
     "start": "PORT=3002 craco start",
     "build": "craco build",
     "eject": "craco eject",
-    "deploy": "yarn build && firebase deploy"
+    "deploy": "git add . && git commit -m 'deploy changes' && yarn build && firebase deploy"
   },
   "eslintConfig": {
     "extends": [

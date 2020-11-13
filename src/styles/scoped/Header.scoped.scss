@@ -19,7 +19,7 @@ header {
 }
 
 .controls {
-    width: 350px;
+    transition: all 0.3s ease-in;
 }
 
 .search {
@@ -27,7 +27,7 @@ header {
 
     input {
         background: $white-dark;
-        width: 237px;
+        transition: all 0.3s ease-in;
         height: 40px;
         border-radius: 20px;
         text-indent: 20px;

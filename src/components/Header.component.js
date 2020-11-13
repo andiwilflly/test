@@ -1,21 +1,50 @@
 import React from "react";
-import { Link } from "@reach/router";
 import i18next from 'i18next';
+// MobX
+import { observer } from "mobx-react";
+import { observable, computed } from "mobx";
 // Styles
 import "styles/scoped/Header.scoped.scss";
+// Store
+import store from "src/store";
 // Components
+import Link from "src/components/Link.component";
 import Img from "src/components/_parts/Img.component";
 import T from "src/components/T.component";
 
 
+@observer
 class Header extends React.Component {
 
-    changeLang = (lang)=> ()=> {
-        i18next.changeLanguage(lang);
+
+    @observable search = {
+        isOpen: false,
+        value: ''
     };
 
 
+    controlsDefaultWidth = 220;
+
+
+    @computed get searchWidth() { return this.search.isOpen ? 237 : 24; };
+    @computed get controlsWidth() { return this.search.isOpen ? this.controlsDefaultWidth + this.searchWidth : this.controlsDefaultWidth; };
+
+
+    // changeLang = (lang)=> ()=> {
+    //     i18next.changeLanguage(lang);
+    // };
+
+    onSearchClick = (e)=> {
+        e.preventDefault();
+
+        this.search.isOpen = !this.search.isOpen;
+    };
+
+
+
     render() {
+
+        console.log('controlsWidth', this.controlsWidth)
         return (
             <header>
                 <Link to='/' className="logo clickable">
@@ -31,13 +60,22 @@ class Header extends React.Component {
                     <T>Львов</T>
                 </div>
 
-                <div className="controls flex:around:center">
-                    <div className="search">
-                        <button className="clickable">
+                <div className="controls flex:around:center" style={{ width: this.controlsWidth }}>
+
+                    <form className="search" onSubmit={ this.onSearchClick }>
+                        <button className="clickable" type="submit" onClick={ this.onSearchClick }>
                             <Img src={`${process.env.PUBLIC_URL}/svg/search.svg`} width={24} height={24} />
                         </button>
-                        <input type="text" />
-                    </div>
+                        <input type="text"
+                               placeholder={ i18next.t('search...') }
+                               onChange={ (e)=> this.search.value = e.target.value }
+                               value={ this.search.value }
+                               style={{
+                                   width: this.searchWidth,
+                                   opacity: this.search.isOpen ? 1 : 0,
+                                   pointerEvents: this.search.isOpen ? 'auto' : 'none'
+                               }} />
+                    </form>
 
                     <Link to="cart" className="clickable">
                         <Img src={`${process.env.PUBLIC_URL}/svg/cart.svg`} width={24} height={24} />
@@ -46,6 +84,10 @@ class Header extends React.Component {
                     <Link to="profile" className="clickable">
                         <Img src={`${process.env.PUBLIC_URL}/svg/profile.svg`} width={24} height={24} />
                     </Link>
+
+                    <div>
+                        { store.lang }
+                    </div>
                 </div>
             </header>
         );

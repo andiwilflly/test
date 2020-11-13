@@ -38,7 +38,7 @@ class ImgComponent extends React.Component {
                  placeholder={<div>placeholder</div>}
                  src={ this.props.src }
                  error={<div>error loading image</div>}
-                 alt={ this.props.alt || this.props.src }
+                 alt={ this.props.alt || 'Loading...' }
             />
         );
     }

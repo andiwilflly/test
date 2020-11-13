@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "@reach/router";
 import Carousel from 'nuka-carousel';
 // MobX
 import { observer } from "mobx-react";
@@ -7,6 +6,7 @@ import { observable } from "mobx";
 // Store
 import store from "src/store";
 // Components
+import Link from "src/components/Link.component";
 import Img from "src/components/_parts/Img.component";
 
 

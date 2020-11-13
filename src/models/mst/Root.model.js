@@ -9,6 +9,7 @@ import SettingsModel from "src/models/mst/Settings.model";
 
 
 const RootModel = {
+    lang: types.union(types.literal('en'), types.literal('ua'), types.literal('ru')),
     auth: AuthModel,
     categories: CategoriesModel,
     mainCategories: MainCategoriesModel,
