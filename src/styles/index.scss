@@ -4,7 +4,9 @@
 
 @import "reset.scss";
 @import "variables.scss";
-@import "flex.scss";
+@import "blocks/flex.scss";
+@import "blocks/button.scss";
+
 
 html {
     height: 100%;
@@ -15,7 +17,7 @@ body {
     height: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: $white;
+    background: $white-mid;
     overflow-y: scroll;
     letter-spacing: 1px;
 }

@@ -1,0 +1,45 @@
+@import "../../variables";
+
+
+.saving-offer {
+  display: flex;
+}
+
+
+.saving-offers {
+  width: (100% / 3) * 2;
+}
+
+.saving-info {
+  padding-right: 20px;
+  width: (100% / 3);
+}
+
+
+.saving-title {
+  margin-top: 45px;
+  font-weight: bold;
+  font-size: (32vw / $fs-ratio);
+  line-height: 32px;
+
+  @media (min-width: $container-max-width) {
+    font-size: 32px;
+  }
+}
+
+
+.saving-description {
+  font-size: (16vw / $fs-ratio);
+  line-height: 22px;
+  margin-top: 16px;
+  margin-bottom: 48px;
+
+  @media (min-width: $container-max-width) {
+    font-size: 16px;
+  }
+}
+
+
+button {
+  max-width: 305px;
+}
