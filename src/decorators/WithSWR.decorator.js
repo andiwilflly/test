@@ -22,13 +22,14 @@ function _renderSWRComponent(WrappedComponent, settings = {}) {
 
 	return function WithSWR(props) {
 
-		const { data, error } = useSWR(settings.url, fetcher);
+		const { data, error, mutate } = useSWR(settings.url, fetcher);
 
 		if(error) return <div>failed to load</div>;
 		if(!data) return <div>loading...</div>;
 
 		const newProps = {
 			...props,
+			mutateSWR: mutate,
 			[settings.name || 'data']: data
 		};
 
