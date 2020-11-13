@@ -1,0 +1,46 @@
+[debug] [2020-11-13T10:23:02.788Z] ----------------------------------------------------------------------
+[debug] [2020-11-13T10:23:02.790Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2020-11-13T10:23:02.790Z] CLI Version:   7.12.1
+[debug] [2020-11-13T10:23:02.790Z] Platform:      darwin
+[debug] [2020-11-13T10:23:02.790Z] Node Version:  v10.16.0
+[debug] [2020-11-13T10:23:02.791Z] Time:          Fri Nov 13 2020 12:23:02 GMT+0200 (Eastern European Standard Time)
+[debug] [2020-11-13T10:23:02.791Z] ----------------------------------------------------------------------
+[debug] [2020-11-13T10:23:02.791Z] 
+[debug] [2020-11-13T10:23:02.802Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-13T10:23:02.802Z] > authorizing via signed-in user
+[debug] [2020-11-13T10:23:02.802Z] [iam] checking project yf-markup for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-11-13T10:23:02.803Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-11-13T10:23:02.804Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-11-13T10:23:02.967Z] <<< HTTP RESPONSE 400
+[debug] [2020-11-13T10:23:02.968Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/yf-markup:testIamPermissions  
+
+[debug] [2020-11-13T10:23:03.783Z] <<< HTTP RESPONSE 401
+[debug] [2020-11-13T10:23:03.783Z] <<< HTTP RESPONSE BODY
+[debug] [2020-11-13T10:23:03.784Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2020-11-13T10:23:03.785Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-11-13T10:23:03.785Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-11-13T10:23:03.913Z] <<< HTTP RESPONSE 400
+[debug] [2020-11-13T10:23:03.913Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/yf-markup  
+ 
+[debug] [2020-11-13T10:23:04.041Z] <<< HTTP RESPONSE 401
+[debug] [2020-11-13T10:23:04.041Z] <<< HTTP RESPONSE BODY
+[debug] [2020-11-13T10:23:04.042Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2020-11-13T10:23:04.160Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Request._callback (/usr/local/lib/node_modules/firebase-tools/lib/api.js:39:35)
+    at Request.self.callback (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:198:13)
+    at Request.EventEmitter.emit (domain.js:448:20)
+    at Request.<anonymous> (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:1161:10)
+    at Request.emit (events.js:198:13)
+    at Request.EventEmitter.emit (domain.js:448:20)
+    at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:1083:12)
+    at Object.onceWrapper (events.js:286:20)
+    at IncomingMessage.emit (events.js:203:15)
+    at IncomingMessage.EventEmitter.emit (domain.js:448:20)
+    at endReadableNT (_stream_readable.js:1129:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+[error] 
+[error] Error: Failed to get Firebase project yf-markup. Please make sure the project exists and your account has permission to access it.

@@ -11,7 +11,7 @@ class MainOffersSavingSlider extends React.Component {
 
     static propTypes = {
         offers: PropTypes.array.isRequired
-    }
+    };
 
 
     render() {

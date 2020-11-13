@@ -21,6 +21,9 @@ class MainBanners extends React.Component {
     @observable banners = [];
 
 
+    $carousel = null;
+
+
 
     async getBanners() {
         let response = await store.auth.fetch("/api/banners");
@@ -29,10 +32,16 @@ class MainBanners extends React.Component {
     }
 
 
+    handleLoadImage = ()=> {
+        this.$carousel.setDimensions();
+    };
+
+
     render() {
         return (
             <Carousel width='100%'
                       autoplay
+                      ref={ $ref => this.$carousel = $ref }
                       withoutControls
                       pauseOnHover
                       slideWidth={1}>
@@ -41,7 +50,9 @@ class MainBanners extends React.Component {
                         <Link style={{ display: 'block' }}
                               className="clickable"
                               to={`restaurant/${banner.restaurantId}`} key={banner.restaurantId}>
-                            <Img src={`${process.env.PUBLIC_URL}${banner.bannerUrl}`} width="100%" />
+                            <Img src={`${process.env.PUBLIC_URL}${banner.bannerUrl}`}
+                                 width="100%"
+                                 onLoad={ this.handleLoadImage } />
                         </Link>
                     )
                 })}
