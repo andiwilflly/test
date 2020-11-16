@@ -46,7 +46,6 @@ class OffersSlider extends React.Component {
                               nextButtonText: ' ',
                               prevButtonText: ' '
                           }}
-                          disableEdgeSwiping
                           ref={ this.onSliderReady }
                           cellSpacing={20}
                           afterSlide={ (currentSlider)=> this.currentSlider = currentSlider+1 }

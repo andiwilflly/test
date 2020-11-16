@@ -40,6 +40,7 @@ class MainBanners extends React.Component {
                               to={`restaurant/${banner.restaurantId}`} key={banner.restaurantId}>
                             <Img src={`${process.env.PUBLIC_URL}${banner.bannerUrl}`}
                                  width="100%"
+                                 heightRatio={0.384}
                                  onLoad={ this.handleLoadImage } />
                         </Link>
                     )

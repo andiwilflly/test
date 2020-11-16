@@ -14,11 +14,11 @@ class MainCategoriesGrid extends React.Component {
 
     static propTypes = {
         cols: PropTypes.number
-    }
+    };
 
     static defaultProps = {
-        cols: 4,
-    }
+        cols: 4
+    };
 
 
     componentDidMount() {
@@ -38,7 +38,7 @@ class MainCategoriesGrid extends React.Component {
         arr = arr.map((item, i)=> ({
             ...item,
             h: emptySlots > i ? item.h+1 : item.h
-        }))
+        }));
 
         let isFixedX = false;
 
@@ -69,7 +69,8 @@ class MainCategoriesGrid extends React.Component {
                         return (
                             <div key={i}
                                  style={{ gridArea: `${y1} / ${x1} / ${y2} / ${x2}` }}>
-                                <MainCategoryCard categoryId={ this.mainCategories[i].id } />
+                                <MainCategoryCard categoryId={ this.mainCategories[i].id }
+                                                  heightRatio={ h === 1 ? 0.826 : 0 } />
                             </div>
                         );
                     }) }

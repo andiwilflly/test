@@ -41,7 +41,11 @@ class OfferCard extends React.Component {
                 <div className="offer-discount flex:center">
                     -{ this.props.offer.discount }%
                 </div>
-                <Img src={ this.props.offer.imageUrl } onLoad={ ()=> this.props.$carousel?.setDimensions() } width="100%" />
+                <Img src={ this.props.offer.imageUrl }
+                     style={{ objectFit: 'cover' }}
+                     onLoad={ ()=> this.props.$carousel?.setDimensions() }
+                     heightRatio={ 0.603 }
+                     width="100%" />
 
                 <div className="offer-details flex:between:center">
                     <div className="offer-name">

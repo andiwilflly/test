@@ -43,8 +43,6 @@ class Header extends React.Component {
 
 
     render() {
-
-        console.log('controlsWidth', this.controlsWidth)
         return (
             <header>
                 <Link to={ `${store.lang}` } className="logo clickable">

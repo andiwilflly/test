@@ -14,7 +14,7 @@ class MainCategoryCard extends React.Component {
 
     static propTypes = {
         categoryId: PropTypes.string.isRequired
-    }
+    };
 
 
     @computed get mainCategory() { return store.mainCategories.all.get(this.props.categoryId) };
@@ -25,9 +25,10 @@ class MainCategoryCard extends React.Component {
             <div className="category-card clickable">
                 <div className="category-img">
                     <Img src={ this.mainCategory.imageUrl }
-                         style={{ objectFit: 'cover' }}
                          width='100%'
-                         height='100%' />
+                         height='100%'
+                         style={{ objectFit: 'cover' }}
+                         heightRatio={ this.props.heightRatio } />
                 </div>
                 <div className="category-name flex:center">
                     { this.mainCategory.name }
