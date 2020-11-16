@@ -4,10 +4,9 @@ import { Router, Redirect } from "@reach/router";
 import store from "src/store";
 // Pages
 const HomePage = React.lazy(()=> import("src/components/pages/HomePage.component"));
-const TestPage = React.lazy(()=> import("src/components/pages/TestPage.component"));
 
 
-let NotFound = () => <div>404</div>
+let NotFound = () => <div>404</div>;
 
 
 export default function RouterComponent() {

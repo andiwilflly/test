@@ -2,11 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
-@import "reset.scss";
-@import "variables.scss";
-@import "basic.scss";
-@import "blocks/flex.scss";
-@import "blocks/button.scss";
+@import "reset";
+@import "variables";
+@import "basic";
+@import "blocks/flex";
+@import "blocks/button";
+@import "blocks/offers-slider";
 
 
 html {
@@ -31,7 +32,9 @@ body {
 }
 
 
-
+.slider {
+    outline: none;
+}
 
 
 .slider-slide {
