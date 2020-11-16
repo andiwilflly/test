@@ -4,10 +4,11 @@ import PropTypes from "prop-types";
 import "src/styles/scoped/categories/CategoryCard.scoped.scss";
 // MobX
 import { computed } from "mobx";
-// Components
-import Img from "src/components/_parts/Img.component";
 //Store
 import store from "src/store";
+// Components
+import Img from "src/components/_parts/Img.component";
+import Link from "src/components/Link.component";
 
 
 class MainCategoryCard extends React.Component {
@@ -22,7 +23,7 @@ class MainCategoryCard extends React.Component {
 
     render() {
         return (
-            <div className="category-card clickable">
+            <Link to={ `/${store.lang}/category/${this.mainCategory.id}` } className="category-card clickable">
                 <div className="category-img">
                     <Img src={ this.mainCategory.imageUrl }
                          width='100%'
@@ -33,7 +34,7 @@ class MainCategoryCard extends React.Component {
                 <div className="category-name flex:center">
                     { this.mainCategory.name }
                 </div>
-            </div>
+            </Link>
         );
     }
 }

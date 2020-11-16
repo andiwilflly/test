@@ -4,9 +4,10 @@ import PropTypes from "prop-types";
 import { observer } from "mobx-react";
 // Styles
 import "src/styles/scoped/offers/MainOffersSavingSlider.scoped.scss";
+// Store
+import store from "src/store";
 // Components
 import OffersSlider from "src/components/_parts/offers/OffersSlider.component";
-import { Desktop, Tablet, Mobile } from "src/components/_parts/MediaQuery.component";
 
 
 @observer
@@ -30,15 +31,7 @@ class MainOffersSavingSlider extends React.Component {
                     <button className="button:green">Смотреть все</button>
                 </div>
                 <div className="saving-offers">
-                    <Desktop>
-                        <OffersSlider offers={ this.props.offers } slidesToShow={2} />
-                    </Desktop>
-                    <Tablet>
-                        <OffersSlider offers={ this.props.offers } slidesToShow={1} />
-                    </Tablet>
-                    <Mobile>
-                        <OffersSlider offers={ this.props.offers } slidesToShow={1} />
-                    </Mobile>
+                    <OffersSlider offers={ this.props.offers } slidesToShow={ store.breakpoint === 'desktop' ? 2 : 1 } />
                 </div>
             </div>
         );

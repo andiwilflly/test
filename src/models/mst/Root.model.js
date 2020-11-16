@@ -1,5 +1,7 @@
 // MobX
 import { types } from 'mobx-state-tree';
+// Utils
+import getBreakpoint from "src/utils/getBreakpoint.util";
 // Models
 import CoreModel from "src/models/mst/Core.model";
 import AuthModel from "src/models/mst/Auth.model";
@@ -10,6 +12,7 @@ import SettingsModel from "src/models/mst/Settings.model";
 
 const RootModel = {
     lang: types.union(types.literal('en'), types.literal('ua'), types.literal('ru')),
+    breakpoint: types.union(types.literal('mobile'), types.literal('tablet'), types.literal('desktop')),
     auth: AuthModel,
     categories: CategoriesModel,
     mainCategories: MainCategoriesModel,
@@ -19,6 +22,20 @@ const RootModel = {
 
 const actions = (store)=> {
     return {
+
+        onWindowResize() {
+            if(store.settings.breakpoint !== store.breakpoint) store.update({ breakpoint: getBreakpoint.breakpoint });
+        },
+
+
+        // Hooks
+        afterCreate() {
+            window.addEventListener("resize", store.onWindowResize, false);
+        },
+
+        beforeDestroy() {
+            window.removeEventListener("resize", store.onWindowResize, false);
+        }
     };
 };
 
