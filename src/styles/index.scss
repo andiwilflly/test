@@ -7,6 +7,19 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+    font-family: "GothamPro";
+    src: url(./fonts/GothamPro.ttf);
+    src: url(./fonts/GothamPro.woff) format("woff")
+}
+
+@font-face {
+    font-family: "GothamProBlack";
+    src: url(./fonts/GothamPro-Black.woff) format("woff")
+}
+
+
 @import "reset";
 @import "variables";
 @import "basic";
@@ -27,6 +40,7 @@ body {
     overflow-y: scroll;
     letter-spacing: 1px;
 }
+
 
 #root {
     height: 100%;

@@ -1,12 +1,47 @@
 module.exports = {
 	purge: ["./src/**/*.html", "./src/**/*.js"],
 	theme: {
+		colors: {
+			white: '#FBFBFB',
+			gray_lighter: '#FAFAFA',
+			gray_light: '#EAEAEA',
+			orange: '#F7DA92',
+			red: '#BD322F',
+			green: '#61B28B',
+			green_light: '#A7D7BF',
+			black: '#2E3237',
+			black_light: '#333333',
+		},
+		fontFamily: {
+			'gotham':       ['GothamPro', 'Arial', 'sans-serif'],
+			'gotham_black': ['GothamProBlack', 'Arial', 'sans-serif'],
+			'noto':         ['Noto Sans', 'Arial', 'sans-serif'],
+		},
+		fontSize: {
+
+			xl: ['2.5em', {
+				letterSpacing: '0.02em',
+				lineHeight: '129%',
+			}],
+			lg: ['2em', {
+				lineHeight: '129%',
+			}],
+			md: ['1.25em', {
+				lineHeight: '129%',
+			}],
+			base: ['1em', {
+				lineHeight: '129%'
+			}],
+			sm: ['0.875em', {
+				lineHeight: '129%'
+			}],
+		},
 		extend: {
 			screens: {
 				'mobile':  { 'max': '767px' },
 				'tablet':  { 'min': '768px', 'max': '991px' },
 				'desktop': { 'min': '992px', 'max': '1919px' },
-				'hd':      { 'min': '1920px' },
+				'HD':      { 'min': '1920px' }
 			}
 		},
 	},

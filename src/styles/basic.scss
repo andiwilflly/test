@@ -20,6 +20,9 @@ button {
   background: transparent;
   cursor: pointer;
 }
+button:focus {
+  outline: none;
+}
 
 
 .link {
