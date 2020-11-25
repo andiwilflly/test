@@ -4,9 +4,8 @@ import { observer } from "mobx-react";
 import store from "src/store";
 // Components
 import DownloadAppBanner from "src/components/_parts/banners/DownloadAppBanner.component";
-import MainCategoriesGrid from "src/components/_parts/categories/MainCategoriesGrid.component";
 import MainOffers from "src/components/_parts/offers/MainOffers.component";
-import { Desktop, Tablet, Mobile } from "src/components/_parts/MediaQuery.component";
+import Categories from "src/components/_parts/categories/Categories.component";
 
 
 @observer
@@ -27,15 +26,7 @@ class HomePage extends React.Component {
 
                 <div style={{ height: 100 }} />
 
-                <Desktop>
-                    <MainCategoriesGrid cols={4} />
-                </Desktop>
-                <Tablet>
-                    <MainCategoriesGrid cols={3} />
-                </Tablet>
-                <Mobile>
-                    <MainCategoriesGrid cols={2} />
-                </Mobile>
+                <Categories />
 
                 { store.settings.SHOW_DOWNLOAD_APP_BANNER ?
                     <>
