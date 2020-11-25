@@ -2,10 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import "reset";
 @import "variables";
 @import "basic";
-@import "blocks/flex";
 @import "blocks/button";
 @import "blocks/offers-slider";
 

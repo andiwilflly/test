@@ -2,6 +2,8 @@
 const path = require("path");
 
 
+// @TAILWIND FIX: https://tailwindcss.com/docs/installation#post-css-7-compatibility-build
+// yarn add tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
 module.exports = {
     webpack: {
         alias: {
@@ -27,5 +29,12 @@ module.exports = {
             ["@babel/plugin-proposal-decorators", { "legacy": true }],
             "@babel/plugin-proposal-optional-chaining"
         ]
+    },
+    style: {
+        postcss: {
+            plugins: [
+                require("tailwindcss")("./tailwind.config.js")
+            ]
+        }
     }
 };

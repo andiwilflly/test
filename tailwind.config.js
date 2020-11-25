@@ -3,8 +3,11 @@ module.exports = {
 	theme: {
 		extend: {
 			screens: {
-				xs: { max: "400px" },
-			},
+				'mobile':  { 'max': '767px' },
+				'tablet':  { 'min': '768px', 'max': '991px' },
+				'desktop': { 'min': '992px', 'max': '1919px' },
+				'hd':      { 'min': '1920px' },
+			}
 		},
 	},
 };

@@ -43,15 +43,15 @@ class ImgComponent extends React.Component {
 
     componentDidMount() {
         if(this.props.heightRatio && window.ResizeObserver) this.observeHeightRatio();
-        this.observeScroll();
-        setTimeout(()=> {
-            this.props.onLoad();
-        }, 0);
+        //this.observeScroll();
+
+        this.img.isReady = true;
+        setTimeout(()=> this.props.onLoad(), 0);
     }
 
     componentWillUnmount() {
         if(this.props.heightRatio && window.ResizeObserver) this.resizeObserver.unobserve(this.$img.current);
-        this.scrollObserver.unobserve(this.$img.current);
+        //this.scrollObserver.unobserve(this.$img.current);
     }
 
 

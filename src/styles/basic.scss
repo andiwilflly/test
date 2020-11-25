@@ -1,14 +1,6 @@
 @import "variables";
 
 
-h3 {
-  margin: 0;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 32px;
-}
-
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   monospace;
@@ -44,10 +36,6 @@ button {
   }
 }
 
-.nowrap {
-  white-space: nowrap;
-}
-
 
 .clickable {
   cursor: pointer;
@@ -70,43 +58,3 @@ button {
   }
 }
 
-
-@each $size in $fonts-sizes {
-  .fs#{$size} {
-    font-size: #{$size}px;
-  }
-}
-
-@each $size in $margin-sizes {
-  .p#{$size} {
-    padding: #{$size}px;
-  }
-  .pr#{$size} {
-    padding-right: #{$size}px;
-  }
-  .pl#{$size} {
-    padding-left: #{$size}px;
-  }
-  .pt#{$size} {
-    padding-top: #{$size}px;
-  }
-  .pb#{$size} {
-    padding-bottom: #{$size}px;
-  }
-
-  .m#{$size} {
-    margin: #{$size}px;
-  }
-  .mr#{$size} {
-    margin-right: #{$size}px;
-  }
-  .ml#{$size} {
-    margin-left: #{$size}px;
-  }
-  .mt#{$size} {
-    margin-top: #{$size}px;
-  }
-  .mb#{$size} {
-    margin-bottom: #{$size}px;
-  }
-}

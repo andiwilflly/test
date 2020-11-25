@@ -26,7 +26,7 @@ class Header extends React.Component {
     controlsDefaultWidth = 220;
 
 
-    @computed get searchWidth() { return this.search.isOpen ? 237 : 24; };
+    @computed get searchWidth() { return this.search.isOpen ? 237 : 0; };
     @computed get controlsWidth() { return this.search.isOpen ? this.controlsDefaultWidth + this.searchWidth : this.controlsDefaultWidth; };
 
 
@@ -49,9 +49,6 @@ class Header extends React.Component {
                     <Img src={`${process.env.PUBLIC_URL}/svg/logo.svg`} width={115} height={38} />
                 </Link>
 
-                <Link to={ `${store.lang}` } className="link nowrap"><T>Главная страница</T></Link>
-                <Link to={ `${store.lang}/about-us` } className="link nowrap"><T>Про нас</T></Link>
-                <Link to={ `${store.lang}/contacts` } className="link nowrap"><T>Контакты</T></Link>
                 <div className='nowrap flex:center'>
                     <Img src={`${process.env.PUBLIC_URL}/svg/location.svg`} width={16} height={22} />
                     &nbsp;&nbsp;
