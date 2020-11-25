@@ -14,16 +14,6 @@ class HomePage extends React.Component {
     render() {
         return (
             <>
-
-                <div className="grid grid-cols-3 tablet:grid-cols-2 mobile:grid-cols-1">
-                    <div className="text-xl font-gotham_black uppercase">Gotham Pro Black 40 </div>
-                    <div className="text-lg font-gotham font-semibold">Gotham Pro Medium 32</div>
-                    <div className="text-md font-semibold">Noto Sans Medium 20</div>
-                    <div className="text-md">Noto Sans Regular 20</div>
-                    <div className="text-base">Noto Sans Regular 16</div>
-                    <div className="text-sm ">Noto Sans Regular 14</div>
-                </div>
-
                 <div style={{ height: 100 }} />
 
                 <Categories />
