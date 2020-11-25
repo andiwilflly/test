@@ -1,30 +1,33 @@
-@import "../variables";
+.button {
+  @apply bg-green rounded-full text-white text-sm flex justify-center items-center h-12 w-72 clickable;
 
-%button {
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 30px;
-  font-size: 14px;
-  color: $white;
-  width: 100%;
-  cursor: pointer;
-  transform: translate(0, 0);
+  &:disabled {
+    @apply bg-gray_light;
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.08);
+  }
+}
+
+
+.button-green {
+  @apply bg-white rounded-full text-green text-sm flex justify-center items-center h-12 w-72 clickable border-green border-2 border-solid clickable;
+
+  &:disabled {
+    @apply border-gray_light text-gray_light;
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.08);
+  }
+}
+
+
+.button,
+.button-green {
 
   &:hover {
-    opacity: 0.8;
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.15);
   }
 
-  &:active {
-    transform: translate(1px, 1px);
+  &:disabled {
+    pointer-events: none;
   }
 }
 
-
-.button\:green {
-  @extend %button;
-
-  background: $green-light;
-}
 

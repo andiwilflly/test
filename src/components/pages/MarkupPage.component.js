@@ -27,11 +27,16 @@ class MarkupPage extends React.Component {
 
                 <div className="my-10" />
 
-                <button className="bg-green rounded-full text-white text-sm flex justify-center items-center h-12 w-72 clickable">Green button</button>
+                <div className="grid gap-7 grid-cols-2">
 
-                <div className="my-10" />
+                    <button className="button">Green button</button>
 
-                <button className="bg-white rounded-full text-green text-sm flex justify-center items-center h-12 w-72 clickable border-green border-2 border-solid">White button</button>
+                    <button className="button-green">White button</button>
+
+                    <button className="button" disabled>Green button</button>
+
+                    <button className="button-green" disabled>White button</button>
+                </div>
 
                 <div className="my-10" />
             </>
