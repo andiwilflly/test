@@ -46,16 +46,16 @@ class Header extends React.Component {
         return (
             <header>
                 <Link to={ `${store.lang}` } className="logo clickable">
-                    <Img src={`${process.env.PUBLIC_URL}/svg/logo.svg`} width={115} height={38} />
+                    <Img src={`${process.env.PUBLIC_URL}/svg/logo.svg`} className="text-black_light" width={115} height={38} />
                 </Link>
 
-                <div className='nowrap flex:center'>
-                    <Img src={`${process.env.PUBLIC_URL}/svg/location.svg`} width={16} height={22} />
+                <div className='nowrap flex justify-around items-center'>
+                    <Img src={`${process.env.PUBLIC_URL}/svg/location.svg`} className="animate-bounce text-black_light" width={16} height={22} />
                     &nbsp;&nbsp;
                     <T>Львов</T>
                 </div>
 
-                <div className="controls flex:around:center" style={{ width: this.controlsWidth }}>
+                <div className="controls flex justify-around items-center" style={{ width: this.controlsWidth }}>
 
                     <form className="search" onSubmit={ this.onSearchClick }>
                         <button className="clickable" type="submit" onClick={ this.onSearchClick }>
@@ -73,11 +73,11 @@ class Header extends React.Component {
                     </form>
 
                     <Link to={ `${store.lang}/cart` } className="clickable">
-                        <Img src={`${process.env.PUBLIC_URL}/svg/cart.svg`} width={24} height={24} />
+                        <Img src={`${process.env.PUBLIC_URL}/svg/cart.svg`} className="text-black_light" width={24} height={24} />
                     </Link>
 
                     <Link to={ `${store.lang}/profile` } className="clickable">
-                        <Img src={`${process.env.PUBLIC_URL}/svg/profile.svg`} width={24} height={24} />
+                        <Img src={`${process.env.PUBLIC_URL}/svg/profile.svg`} className="text-black_light" width={24} height={24} />
                     </Link>
 
                     <div>

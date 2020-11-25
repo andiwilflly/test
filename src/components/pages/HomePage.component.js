@@ -22,7 +22,7 @@ class HomePage extends React.Component {
                     <div className="text-md font-semibold">Noto Sans Medium 20</div>
                     <div className="text-md">Noto Sans Regular 20</div>
                     <div className="text-base">Noto Sans Regular 16</div>
-                    <div className="text-sm">Noto Sans Regular 14</div>
+                    <div className="text-sm ">Noto Sans Regular 14</div>
                 </div>
 
                 <div style={{ height: 100 }} />
