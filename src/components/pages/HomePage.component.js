@@ -6,6 +6,7 @@ import store from "src/store";
 import DownloadAppBanner from "src/components/_parts/banners/DownloadAppBanner.component";
 import MainOffers from "src/components/_parts/offers/MainOffers.component";
 import Categories from "src/components/_parts/categories/Categories.component";
+import MainBanner from "src/components/_parts/banners/MainBanner.component";
 
 
 @observer
@@ -14,9 +15,11 @@ class HomePage extends React.Component {
     render() {
         return (
             <>
-                <div style={{ height: 100 }} />
+                <MainBanner />
 
-                <Categories />
+                <div className="layout-container">
+                    <Categories />
+                </div>
 
                 { store.settings.SHOW_DOWNLOAD_APP_BANNER ?
                     <>
@@ -25,9 +28,9 @@ class HomePage extends React.Component {
                     </>
                     : null }
 
-                <div style={{ height: 110 }} />
+                <div className="layout-divider" />
                 <MainOffers />
-                <div style={{ height: 300 }} />
+                <div className="layout-divider" />
             </>
         );
     }

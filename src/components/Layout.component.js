@@ -12,7 +12,7 @@ class Layout extends React.Component {
     render() {
 
         return (
-            <section className="layout">
+            <section>
                 <Router />
                 <hr/>
                 <pre>

@@ -5,7 +5,7 @@ module.exports = {
 			white: '#FBFBFB',
 			gray_lighter: '#FAFAFA',
 			gray_light: '#EAEAEA',
-			orange: '#F7DA92',
+			yellow: '#F7DA92',
 			red: '#BD322F',
 			green: '#61B28B',
 			green_light: '#A7D7BF',

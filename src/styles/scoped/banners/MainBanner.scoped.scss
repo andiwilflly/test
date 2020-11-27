@@ -1,0 +1,29 @@
+@import "../../variables";
+
+
+$left-side-width: 60.73%;
+
+
+.banner {
+  position: relative;
+  height: calc(100vh - #{$header-height});
+}
+
+
+.right-side,
+.left-side {
+  position: absolute;
+  height: 100%;
+}
+
+
+.left-side {
+  width: $left-side-width;
+  left: 0;
+}
+
+
+.right-side {
+  width: 100 - $left-side-width;
+  right: 0;
+}
