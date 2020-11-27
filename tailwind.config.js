@@ -20,8 +20,8 @@ module.exports = {
 		fontSize: {
 
 			xl: ['2.5em', {
-				letterSpacing: '0.02em',
-				lineHeight: '129%',
+				letterSpacing: '0.05em',
+				lineHeight: '143%',
 			}],
 			lg: ['2em', {
 				lineHeight: '129%',
@@ -30,7 +30,7 @@ module.exports = {
 				lineHeight: '129%',
 			}],
 			base: ['1em', {
-				lineHeight: '129%'
+				lineHeight: '133%'
 			}],
 			sm: ['0.875em', {
 				lineHeight: '129%'

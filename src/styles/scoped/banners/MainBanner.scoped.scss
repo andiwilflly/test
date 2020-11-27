@@ -9,11 +9,32 @@ $left-side-width: 60.73%;
   height: calc(100vh - #{$header-height});
 }
 
+.info {
+  position: relative;
+
+  .text-base {
+    margin: 4.5vh 0 7vh 0;
+  }
+
+  .button {
+    width: 248px;
+  }
+}
+
+
+.plate {
+  position: absolute;
+  height: 80vh;
+  left: 40%;
+  top: 6vh;
+}
+
 
 .right-side,
 .left-side {
   position: absolute;
   height: 100%;
+  top: 0;
 }
 
 
