@@ -1,21 +1,19 @@
 @import "../variables";
 
 header {
-    height: $page-top-offset;
-    min-height: $page-top-offset;
-    margin: 0 auto;
-    display: flex;
+    height: 82px;
+    min-height: 82px;
     width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    max-width: $container-max-width;
     font-size: 20px;
+    box-shadow: 0 10px 20px rgba(51, 51, 51, 0.1);
+}
+
+.logo-wrapper {
+    width: 315px;
 }
 
 .logo {
     position: relative;
-    top: 6px;
-    width: 11.5%;
 }
 
 .controls {
@@ -24,18 +22,24 @@ header {
 
 .search {
     position: relative;
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in;
 
     input {
         background: $white-dark;
         transition: all 0.3s ease-in;
         height: 40px;
+        position: relative;
+        top: -8px;
+        left: 10px;
         border-radius: 20px;
         text-indent: 20px;
     }
 
     button {
         position: absolute;
-        right: 15px;
-        top: 8px;
+        right: 0;
+        top: 0;
     }
 }

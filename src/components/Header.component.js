@@ -23,10 +23,10 @@ class Header extends React.Component {
     };
 
 
-    controlsDefaultWidth = 220;
+    controlsDefaultWidth = 240;
 
 
-    @computed get searchWidth() { return this.search.isOpen ? 237 : 0; };
+    @computed get searchWidth() { return this.search.isOpen ? 237 : 24; };
     @computed get controlsWidth() { return this.search.isOpen ? this.controlsDefaultWidth + this.searchWidth : this.controlsDefaultWidth; };
 
 
@@ -44,46 +44,52 @@ class Header extends React.Component {
 
     render() {
         return (
-            <header>
-                <Link to={ `${store.lang}` } className="logo clickable">
-                    <Img src={`${process.env.PUBLIC_URL}/svg/logo.svg`} className="text-black_light" width={115} height={38} />
-                </Link>
+            <header className='bg-white'>
+               <div className="layout-container flex justify-between items-center">
+                   <div className="logo-wrapper flex justify-between items-center">
+                       <Link to={ `${store.lang}` } className="logo clickable">
+                           <Img src={`${process.env.PUBLIC_URL}/svg/logo.svg`} className="text-black_light" width={145} height={50} />
+                       </Link>
 
-                <div className='nowrap flex justify-around items-center'>
-                    <Img src={`${process.env.PUBLIC_URL}/svg/location.svg`} className="animate-bounce text-black_light" width={16} height={22} />
-                    &nbsp;&nbsp;
-                    <T>Львов</T>
-                </div>
+                       <div className='nowrap flex justify-between items-center'>
+                           <Img src={`${process.env.PUBLIC_URL}/svg/location.svg`} className="animate-bounce text-black_light" width={18} height={24} />
+                           <div className="ml-2"><T>Львов</T></div>
+                       </div>
+                   </div>
 
-                <div className="controls flex justify-around items-center" style={{ width: this.controlsWidth }}>
+                   <div className="controls flex justify-between items-center" style={{ width: this.controlsWidth }}>
 
-                    <form className="search" onSubmit={ this.onSearchClick }>
-                        <button className="clickable" type="submit" onClick={ this.onSearchClick }>
-                            <Img src={`${process.env.PUBLIC_URL}/svg/search.svg`} width={24} height={24} />
-                        </button>
-                        <input type="text"
-                               placeholder={ i18next.t('search...') }
-                               onChange={ (e)=> this.search.value = e.target.value }
-                               value={ this.search.value }
-                               style={{
-                                   width: this.searchWidth,
-                                   opacity: this.search.isOpen ? 1 : 0,
-                                   pointerEvents: this.search.isOpen ? 'auto' : 'none'
-                               }} />
-                    </form>
+                       <form className="search"
+                             style={{ width: this.searchWidth }}
+                             onSubmit={ this.onSearchClick } >
+                           <input type="text"
+                                  placeholder={ i18next.t('search...') }
+                                  onChange={ (e)=> this.search.value = e.target.value }
+                                  value={ this.search.value }
+                                  style={{
+                                      width: this.searchWidth,
+                                      opacity: this.search.isOpen ? 1 : 0,
+                                      pointerEvents: this.search.isOpen ? 'auto' : 'none'
+                                  }} />
 
-                    <Link to={ `${store.lang}/cart` } className="clickable">
-                        <Img src={`${process.env.PUBLIC_URL}/svg/cart.svg`} className="text-black_light" width={24} height={24} />
-                    </Link>
+                           <button className="clickable" type="submit" onClick={ this.onSearchClick }>
+                               <Img src={`${process.env.PUBLIC_URL}/svg/search.svg`} width={24} height={24} />
+                           </button>
+                       </form>
 
-                    <Link to={ `${store.lang}/profile` } className="clickable">
-                        <Img src={`${process.env.PUBLIC_URL}/svg/profile.svg`} className="text-black_light" width={24} height={24} />
-                    </Link>
+                       <Link to={ `${store.lang}/cart` } className="clickable">
+                           <Img src={`${process.env.PUBLIC_URL}/svg/cart.svg`} className="text-black_light" width={24} height={24} />
+                       </Link>
 
-                    <div>
-                        { store.lang }
-                    </div>
-                </div>
+                       <Link to={ `${store.lang}/profile` } className="clickable">
+                           <Img src={`${process.env.PUBLIC_URL}/svg/profile.svg`} className="text-black_light" width={24} height={24} />
+                       </Link>
+
+                       <div>
+                           { store.lang }
+                       </div>
+                   </div>
+               </div>
             </header>
         );
     }

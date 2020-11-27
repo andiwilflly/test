@@ -1,5 +1,5 @@
 .button {
-  @apply bg-green rounded-full text-white text-sm flex justify-center items-center h-12 w-72 clickable;
+  @apply bg-green rounded-full text-white text-sm flex justify-center items-center clickable;
 
   &:disabled {
     @apply bg-gray_light;
@@ -9,7 +9,7 @@
 
 
 .button-green {
-  @apply bg-white rounded-full text-green text-sm flex justify-center items-center h-12 w-72 clickable border-green border-2 border-solid clickable;
+  @apply bg-white rounded-full text-green text-sm flex justify-center items-center clickable border-green border-2 border-solid clickable;
 
   &:disabled {
     @apply border-gray_light text-gray_light;
@@ -20,6 +20,8 @@
 
 .button,
 .button-green {
+  width: 305px;
+  height: 48px;
 
   &:hover {
     box-shadow: 0 10px 32px rgba(0, 0, 0, 0.15);
