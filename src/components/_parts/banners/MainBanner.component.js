@@ -10,7 +10,6 @@ import Img from "src/components/_parts/Img.component";
 @observer
 class MainBanner extends React.Component {
 
-
 	headerHeight = 82;
 
 
@@ -24,8 +23,12 @@ class MainBanner extends React.Component {
 
 
 	onScroll = (e)=> {
-		if(window.scrollY === 0 && e.deltaY > 0) {
-			window.scrollTo({ top: window.innerHeight - this.headerHeight, behavior: "smooth" });
+		if(window.scrollY <= window.innerHeight - this.headerHeight) {
+
+			window.scrollTo({
+				top: e.deltaY > 0 ? window.innerHeight - this.headerHeight : 0,
+				behavior: "smooth"
+			});
 		}
 	};
 
@@ -40,8 +43,7 @@ class MainBanner extends React.Component {
 
 				<div className="layout-container">
 					<div className="info">
-						<div className="text-xl font-gotham_black uppercase
-						">Спасай еду</div>
+						<div className="text-xl font-gotham_black uppercase">Спасай еду</div>
 						<div className="text-xl font-gotham_black uppercase">Береги природу</div>
 						<div className="text-xl font-gotham_black uppercase">Экономь с YoFood</div>
 

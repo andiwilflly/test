@@ -17,6 +17,8 @@ class HomePage extends React.Component {
             <>
                 <MainBanner />
 
+                <div className="layout-divider" />
+
                 <div className="layout-container">
                     <Categories />
                 </div>
