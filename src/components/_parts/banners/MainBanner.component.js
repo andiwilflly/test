@@ -10,9 +10,25 @@ import Img from "src/components/_parts/Img.component";
 @observer
 class MainBanner extends React.Component {
 
-	constructor(props) {
-		super(props);
+
+	headerHeight = 82;
+
+
+	componentDidMount() {
+		window.addEventListener('wheel', this.onScroll);
 	}
+
+	componentWillUnmount() {
+		window.removeEventListener('wheel', this.onScroll);
+	}
+
+
+	onScroll = (e)=> {
+		if(window.scrollY === 0 && e.deltaY > 0) {
+			window.scrollTo({ top: window.innerHeight - this.headerHeight, behavior: "smooth" });
+		}
+	};
+
 
 
 	render() {

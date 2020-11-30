@@ -9,21 +9,12 @@ import Router from 'components/@router/Router.component';
 @observer
 class Layout extends React.Component {
 
+
     render() {
 
         return (
-            <section>
+            <section id="layout">
                 <Router />
-                <hr/>
-                <pre>
-                    - store.mediaQuery [mobile, tablet, desktop]
-                    - axios
-
-                    - restaurant
-                    - dish
-                    - offer
-                </pre>
-                <hr/>
             </section>
         );
     }
