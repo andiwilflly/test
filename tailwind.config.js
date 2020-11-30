@@ -18,7 +18,10 @@ module.exports = {
 			'noto':         ['Noto Sans', 'Arial', 'sans-serif'],
 		},
 		fontSize: {
-
+			xxl: ['3.5em', {
+				letterSpacing: '0.05em',
+				lineHeight: '123%',
+			}],
 			xl: ['2.5em', {
 				letterSpacing: '0.05em',
 				lineHeight: '143%',

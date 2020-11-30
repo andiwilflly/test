@@ -12,7 +12,7 @@ class Categories extends React.Component {
         return (
             <div className="relative">
                 <div className="absolute top-0 bottom-0 left-0 flex items-center">
-                    <div className="text-xl font-gotham_black uppercase">
+                    <div className="text-xxl font-gotham_black uppercase" style={{ paddingBottom: '17vh' }}>
                         <T>Выберите</T>
                         <br/>
                         <T>категорию</T>
