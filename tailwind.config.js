@@ -30,7 +30,7 @@ module.exports = {
 				lineHeight: '129%',
 			}],
 			base: ['1em', {
-				lineHeight: '133%'
+				lineHeight: '150%'
 			}],
 			sm: ['0.875em', {
 				lineHeight: '129%'

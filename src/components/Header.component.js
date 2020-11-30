@@ -27,7 +27,7 @@ class Header extends React.Component {
 
 
     @computed get searchWidth() { return this.search.isOpen ? 237 : 24; };
-    @computed get controlsWidth() { return this.search.isOpen ? this.controlsDefaultWidth + this.searchWidth : this.controlsDefaultWidth; };
+    @computed get controlsWidth() { return this.search.isOpen ? this.controlsDefaultWidth + this.searchWidth - 24 : this.controlsDefaultWidth; };
 
 
     // changeLang = (lang)=> ()=> {

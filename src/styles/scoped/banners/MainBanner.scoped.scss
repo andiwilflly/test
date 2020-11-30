@@ -11,6 +11,7 @@ $left-side-width: 60.73%;
 
 .info {
   position: relative;
+  z-index: 1;
 
   .text-base {
     margin: 4.5vh 0 7vh 0;
@@ -21,12 +22,15 @@ $left-side-width: 60.73%;
   }
 }
 
+.plate-wrapper {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  bottom: 0;
+}
 
 .plate {
-  position: absolute;
-  height: 80vh;
-  left: 40%;
-  top: 6vh;
+  width: 70vmin;
 }
 
 

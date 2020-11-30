@@ -10,20 +10,26 @@ import Img from "src/components/_parts/Img.component";
 @observer
 class MainBanner extends React.Component {
 
+	constructor(props) {
+		super(props);
+	}
+
 
 	render() {
 		return (
 			<div className="banner flex justify-between items-center">
+
 				<div className="left-side bg-yellow" />
 				<div className="right-side bg-green_light" />
 
 				<div className="layout-container">
 					<div className="info">
-						<div className="text-xl font-gotham_black uppercase">Спасай еду</div>
+						<div className="text-xl font-gotham_black uppercase
+						">Спасай еду</div>
 						<div className="text-xl font-gotham_black uppercase">Береги природу</div>
 						<div className="text-xl font-gotham_black uppercase">Экономь с YoFood</div>
 
-						<div className="text-base">
+						<div className="text-base text-black">
 							Сделай доброе дело и помоги планете избавиться
 							<br/>
 							от пищевых отходов! Просто закажи еду из
@@ -35,8 +41,10 @@ class MainBanner extends React.Component {
 					</div>
 				</div>
 
-				<div className="plate">
-					<Img src={`${process.env.PUBLIC_URL}/png/plate.png`} width={ '100%' } />
+				<div className="plate-wrapper flex justify-center items-center">
+					<div className="plate">
+						<Img src={`${process.env.PUBLIC_URL}/png/plate2.png`} width={ '100%' } />
+					</div>
 				</div>
 			</div>
 		);
