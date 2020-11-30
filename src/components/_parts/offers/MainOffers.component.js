@@ -35,15 +35,15 @@ class MainOffers extends React.Component {
                 <MainOffersSavingSlider offers={ this.props.mainOffers.saving } />
 
                 <div style={{ height: 110 }} />
-                <h3 className="flex:center mb40">Закажи на завтрак</h3>
+                <h3 className="flex text-lg font-gotham font-semibold items-center justify-center mb-5">Закажи на завтрак</h3>
                 <OffersSlider offers={this.props.mainOffers.breakfast } slidesToShow={ this.slidesToShow } />
 
                 <div style={{ height: 110 }} />
-                <h3 className="flex:center mb40">Закажи на обед</h3>
+                <h3 className="flex text-lg font-gotham font-semibold items-center justify-center mb-5">Закажи на обед</h3>
                 <OffersSlider offers={ this.props.mainOffers.dinner } slidesToShow={ this.slidesToShow } />
 
                 <div style={{ height: 110 }} />
-                <h3 className="flex:center mb40">Закажи на ужин</h3>
+                <h3 className="flex text-lg font-gotham font-semibold items-center justify-center mb-5">Закажи на ужин</h3>
                 <OffersSlider offers={ this.props.mainOffers.supper } slidesToShow={ this.slidesToShow } />
             </div>
         );

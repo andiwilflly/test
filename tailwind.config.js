@@ -5,7 +5,9 @@ module.exports = {
 			white: '#FBFBFB',
 			gray_lighter: '#FAFAFA',
 			gray_light: '#EAEAEA',
+			yellow_dark: '#FFD56F',
 			yellow: '#F7DA92',
+			yellow_light: '#F8F5E6',
 			red: '#BD322F',
 			green: '#61B28B',
 			green_light: '#A7D7BF',
@@ -20,7 +22,7 @@ module.exports = {
 		fontSize: {
 			xxl: ['3.5em', {
 				letterSpacing: '0.05em',
-				lineHeight: '123%',
+				lineHeight: '113%',
 			}],
 			xl: ['2.5em', {
 				letterSpacing: '0.05em',

@@ -84,7 +84,8 @@ class ImgComponent extends React.Component {
             <div ref={this.$img}
                  style={{
                      width: this.props.width,
-                     height: this.img.height || this.props.height }}>
+                     height: this.img.height || this.props.height
+                 }}>
 
                 { this.img.isReady ?
                     <img className={ this.props.className }
@@ -97,7 +98,7 @@ class ImgComponent extends React.Component {
                          src={ this.props.src }
                          alt={ this.props.alt || 'alt' }/>
                     :
-                    <div className="flex:center"
+                    <div className="flex items-center justify-center"
                          style={{
                              width: this.props.width,
                              height: this.imgHeight

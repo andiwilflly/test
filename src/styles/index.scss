@@ -22,6 +22,7 @@
 
 @import "reset";
 @import "variables";
+@import "mixins";
 @import "basic";
 @import "blocks/button";
 @import "blocks/offers-slider";
@@ -55,6 +56,7 @@ body {
     padding: 0 $side-container-margin;
     margin: 0 auto;
     width: 100%;
+    position: relative;
     min-height: inherit;
 }
 

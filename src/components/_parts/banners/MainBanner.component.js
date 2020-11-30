@@ -61,7 +61,7 @@ class MainBanner extends React.Component {
 
 				<div className="plate-wrapper flex justify-center items-center">
 					<div className="plate">
-						<Img src={`${process.env.PUBLIC_URL}/png/plate2.png`} width={ '100%' } />
+						<Img src={`${process.env.PUBLIC_URL}/png/plate.png`} width={ '100%' } />
 					</div>
 				</div>
 			</div>

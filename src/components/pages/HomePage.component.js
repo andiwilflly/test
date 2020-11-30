@@ -31,7 +31,9 @@ class HomePage extends React.Component {
                     : null }
 
                 <div className="layout-divider" />
-                <MainOffers />
+                <div className="layout-container">
+                    <MainOffers />
+                </div>
                 <div className="layout-divider" />
             </>
         );

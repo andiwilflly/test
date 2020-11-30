@@ -25,14 +25,11 @@
 }
 
 .offer-discount {
-  background: $yellow;
-  border-radius: 50%;
   position: absolute;
   width: 56px;
   height: 56px;
   font-size: 16px;
   font-weight: 700;
-  color: $white;
   top: 8px;
   right: 16px;
 }
@@ -44,7 +41,7 @@
 }
 
 .offer-price {
-  width: 180px;
+  width: 130px;
 }
 
 .offer-old-price {
