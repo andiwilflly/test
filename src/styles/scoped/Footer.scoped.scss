@@ -21,6 +21,11 @@ footer .grid {
             margin-bottom: 24px;
         }
     }
+
+    .logo,
+    .footer-download {
+        margin-bottom: 0 !important;
+    }
 }
 
 
@@ -28,9 +33,4 @@ footer .grid {
     position: relative;
     top: -27px;
     margin-bottom: 0;
-}
-
-
-a {
-    display: block;
 }

@@ -34,10 +34,10 @@ module.exports = {
 			md: ['1.25em', {
 				lineHeight: '129%',
 			}],
-			base: ['1em', {
+			base: ['16px', {
 				lineHeight: '150%'
 			}],
-			sm: ['0.875em', {
+			sm: ['14px', {
 				letterSpacing: '0.03em',
 				lineHeight: '129%'
 			}],

@@ -17,7 +17,7 @@ class Footer extends React.Component {
 
     renderDropdownItem = (lang)=> {
         return (
-            <div className='clickable uppercase text-sm' onClick={ ()=> store.setLang(lang) }>
+            <div className='clickable uppercase text-sm text-black' onClick={ ()=> store.setLang(lang) }>
                 { lang }
             </div>
         );
@@ -29,7 +29,7 @@ class Footer extends React.Component {
             <footer className="bg-black_light">
                 <div className="layout-container">
 
-                    <div className="grid gap-5 grid-cols-5 desktop:grid-cols-4 tablet:grid-cols-3 mobile:grid-cols-1">
+                    <div className="grid gap-5">
                         <div className="footer-section">
                             <Link to={ `${store.lang}` } className="logo">
                                 <Img src={`${process.env.PUBLIC_URL}/svg/logo-white.svg`} className="text-black_light" width={145} height={50} />
@@ -38,6 +38,7 @@ class Footer extends React.Component {
                                 <T>О нас</T>
                             </Link>
                             <Dropdown title={ <div className="mr-1">{ store.lang }</div> }
+                                      mode='dark'
                                       items={ ['en', 'ua', 'ru'] }
                                       renderItem={ this.renderDropdownItem } />
                         </div>
@@ -70,7 +71,7 @@ class Footer extends React.Component {
                             <Link to={ `${store.lang}/contact-us` } className="text-sm uppercase font-bold">
                                 <T>Контакты</T>
                             </Link>
-                            <a href='https://instagram.com' className="text-sm">
+                            <a href='https://instagram.com' target="_blank" className="text-sm">
                                 <T>Instagram</T>
                             </a>
                             <a href='mailto:test@gmail.com' className="text-sm">
@@ -81,10 +82,13 @@ class Footer extends React.Component {
                             </a>
                         </div>
 
-                        <div className="footer-section flex">
-                            <div className="clickable mr-5">
+                        <div className="footer-section">
+                            <div className="clickable footer-download">
                                 <Img src={`${process.env.PUBLIC_URL}/png/app-store.png`} width={196} />
                             </div>
+                        </div>
+
+                        <div className="footer-section footer-download">
                             <div className="clickable">
                                 <Img src={`${process.env.PUBLIC_URL}/png/google-play.png`} width={196} />
                             </div>

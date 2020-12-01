@@ -15,10 +15,12 @@ class Dropdown extends React.Component {
 	static propTypes = {
 		title: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.node]).isRequired,
 		items: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.node])).isRequired,
+		mode: PropTypes.oneOf(['dark', 'white']),
 		renderItem: PropTypes.func
 	};
 
 	static defaultProps = {
+		mode: 'white',
 		renderItem: ()=> {}
 	};
 
@@ -41,7 +43,7 @@ class Dropdown extends React.Component {
 
 					{ this.props.title }
 
-					<Img src={`${process.env.PUBLIC_URL}/svg/arrow-down.svg`}
+					<Img src={`${process.env.PUBLIC_URL}/svg/${ this.props.mode === 'dark' ? 'arrow-down-white' : 'arrow-down'}.svg`}
 						 className={ this.dropdown.isOpen ? `transform rotate-180 transition-transform` : 'transform rotate-0 transition-transform' }
 						 width={24}
 						 height={24} />
