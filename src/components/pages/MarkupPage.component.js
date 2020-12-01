@@ -18,12 +18,12 @@ class MarkupPage extends React.Component {
 
                 <div className="my-10" />
 
-                <div className="text-xl font-gotham_black uppercase">Gotham Pro Black 40 </div>
-                <div className="text-lg font-gotham font-semibold">Gotham Pro Medium 32</div>
-                <div className="text-md font-semibold">Noto Sans Medium 20</div>
-                <div className="text-md">Noto Sans Regular 20</div>
-                <div className="text-base">Noto Sans Regular 16</div>
-                <div className="text-sm">Noto Sans Regular 14</div>
+                <div className="text-xl font-gotham_black uppercase">text-xl font-gotham_black uppercase</div>
+                <div className="text-lg font-gotham font-semibold">text-lg font-gotham font-semibold</div>
+                <div className="text-md font-semibold">Noto Sans Medium 20 ( text-md font-semibold )</div>
+                <div className="text-md">Noto Sans Regular 20 ( text-md )</div>
+                <div className="text-base">Noto Sans Regular 16 ( text-base )</div>
+                <div className="text-sm">Noto Sans Regular 14 ( text-sm )</div>
 
                 <div className="my-10" />
 

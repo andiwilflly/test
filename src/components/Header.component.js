@@ -9,6 +9,7 @@ import "styles/scoped/Header.scoped.scss";
 import store from "src/store";
 // Components
 import Link from "src/components/Link.component";
+import Dropdown from "src/components/_parts/Dropdown.component";
 import Img from "src/components/_parts/Img.component";
 import T from "src/components/T.component";
 
@@ -40,6 +41,14 @@ class Header extends React.Component {
         this.search.isOpen = !this.search.isOpen;
     };
 
+
+    renderDropdownItem = (item)=> {
+        return (
+            <div key={item} onClick={ ()=> console.log('keke!', item) }>
+                { item }
+            </div>
+        );
+    };
 
 
     render() {
@@ -86,9 +95,9 @@ class Header extends React.Component {
                                 <Img src={`${process.env.PUBLIC_URL}/svg/profile.svg`} className="text-black_light" width={24} height={24} />
                             </Link>
 
-                            <div>
-                                { store.lang }
-                            </div>
+                            <Dropdown title={ <div className="mr-1">{ store.lang }</div> }
+                                      items={ ['en', 'ua', 'ru'] }
+                                      renderItem={ this.renderDropdownItem } />
                         </div>
                     </div>
                 </header>

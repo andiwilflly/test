@@ -25,10 +25,10 @@ class DownloadAppBanner extends React.Component {
                             </div>
 
                             <div className="flex items-center mt-5">
-                                <div className="clickable mr-5">
+                                <div className="banner-btn clickable mr-5">
                                     <Img src={`${process.env.PUBLIC_URL}/png/app-store.png`} width={196} />
                                 </div>
-                                <div className="clickable">
+                                <div className="banner-btn clickable">
                                     <Img src={`${process.env.PUBLIC_URL}/png/google-play.png`} width={196} />
                                 </div>
                             </div>

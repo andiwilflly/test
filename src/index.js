@@ -9,6 +9,12 @@ import App from './App';
 import "styles/index.scss";
 
 
+window.onerror = function(errorMsg, url, lineNumber) {
+    document.body.innerHTML = `<div style="padding: 20px; color: red">${errorMsg}</div>`;
+    return false;
+};
+
+
 ReactDOM.render(
     <React.StrictMode>
         <App/>

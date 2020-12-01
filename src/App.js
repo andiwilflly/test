@@ -18,10 +18,10 @@ class App extends React.Component {
     render() {
 
         return (
-            <>
+            <div className="text-black_light">
                 <Header />
                 <Layout />
-            </>
+            </div>
         );
     }
 }

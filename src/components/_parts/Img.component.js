@@ -60,7 +60,10 @@ class ImgComponent extends React.Component {
 
     observeHeightRatio() {
         this.resizeObserver = new window.ResizeObserver(entries => {
-            this.img.height = entries[0].contentRect.width * this.props.heightRatio;
+            window.requestAnimationFrame(() => {
+                if (!Array.isArray(entries) || !entries.length) return;
+                this.img.height = entries[0].contentRect.width * this.props.heightRatio;
+            });
         });
         this.resizeObserver.observe(this.$img.current);
     }
