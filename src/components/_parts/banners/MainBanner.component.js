@@ -23,7 +23,11 @@ class MainBanner extends React.Component {
 
 
 	onScroll = (e)=> {
+
+		console.log('=>', e.deltaY, window.scrollY);
 		if(window.scrollY <= window.innerHeight - this.headerHeight) {
+
+			console.log('SCROLL TO', e.deltaY > 0 ? window.innerHeight - this.headerHeight : 0);
 
 			window.scrollTo({
 				top: e.deltaY > 0 ? window.innerHeight - this.headerHeight : 0,
