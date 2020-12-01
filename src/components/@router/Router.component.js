@@ -8,7 +8,7 @@ const HomePage = React.lazy(()=> import("src/components/pages/HomePage.component
 const MarkupPage = React.lazy(()=> import("src/components/pages/MarkupPage.component"));
 
 
-let NotFound = () => <div>404</div>;
+let NotFound = () => <div className="text-xl font-gotham_black uppercase flex justify-center items-center my-10">404</div>;
 
 
 export default function RouterComponent() {
