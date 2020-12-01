@@ -1,10 +1,36 @@
-@import "../variables";
-
 
 footer {
-    background: $green-light;
-    height: 450px;
     position: relative;
-    left: -$page-side-offset;
-    width: calc(100vw - 15px);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 115px 0;
+    margin-top: 240px;
+}
+
+
+footer .grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 196px));
+}
+
+
+
+.footer-section {
+
+    > a {
+        margin-bottom: 16px;
+        &:first-child {
+            margin-bottom: 24px;
+        }
+    }
+}
+
+
+.footer-section .logo {
+    position: relative;
+    top: -27px;
+    margin-bottom: 0;
+}
+
+
+a {
+    display: block;
 }

@@ -38,6 +38,7 @@ module.exports = {
 				lineHeight: '150%'
 			}],
 			sm: ['0.875em', {
+				letterSpacing: '0.03em',
 				lineHeight: '129%'
 			}],
 		},

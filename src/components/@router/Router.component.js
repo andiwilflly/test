@@ -2,6 +2,7 @@ import React from "react";
 import { Router, Redirect } from "@reach/router";
 // Store
 import store from "src/store";
+import Header from "../Header.component";
 // Pages
 const HomePage = React.lazy(()=> import("src/components/pages/HomePage.component"));
 const MarkupPage = React.lazy(()=> import("src/components/pages/MarkupPage.component"));
