@@ -43,11 +43,11 @@ body {
     letter-spacing: 1px;
 
     @include tablet {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     @include mobile {
-        font-size: 13px;
+        font-size: 10px;
     }
 }
 

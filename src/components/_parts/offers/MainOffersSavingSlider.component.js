@@ -21,18 +21,17 @@ class MainOffersSavingSlider extends React.Component {
     render() {
         return (
             <div className="saving-offer">
-                <div className="saving-info">
-                    <h3>С нами ты экономишь</h3>
-
-                    <div className="saving-description">
-                        Asd ekwr jkwenf cksdnck sdkc msdcks dmkfner terg fd??
+                <div className='flex flex-wrap align-bottom'>
+                    {/* Align bottom hack */}
+                    <div />
+                    <div>
+                        <div className="text-lg font-gotham font-semibold">С нами ты экономишь</div>
+                        <div className="offer-text text-base">текст текст текст текст текстте ксттек сттекстте  текстте ксттек сттекстте кс кстт ексттекстте ксттекстте ксттекстте ксттекст</div>
+                        <button className="button">Смотреть все</button>
                     </div>
+                </div>
 
-                    <button className="button:green">Смотреть все</button>
-                </div>
-                <div className="saving-offers">
-                    <OffersSlider offers={ this.props.offers } slidesToShow={ store.breakpoint === 'desktop' ? 2 : 1 } />
-                </div>
+                <OffersSlider offers={ this.props.offers } slidesToShow={ store.breakpoint === 'desktop' ? 2 : 1 } />
             </div>
         );
     }

@@ -1,45 +1,36 @@
+@import "../../mixins";
 @import "../../variables";
 
 
 .saving-offer {
-  display: flex;
-}
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 0;
 
+  @include desktop {
+    grid-template-columns: 1fr 2fr;
+  }
 
-.saving-offers {
-  width: (100% / 3) * 2;
-}
+  @include tablet {
+    grid-template-columns: 1fr 1fr;
+  }
 
-.saving-info {
-  padding-right: 20px;
-  width: (100% / 3);
-}
+  @include mobile {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
 
-
-h3 {
-  margin-top: 45px;
-  font-weight: bold;
-  font-size: (32vw / $fs-ratio);
-  line-height: 32px;
-
-  @media (min-width: $container-max-width) {
-    font-size: 32px;
+    & > div:first-child{
+      order: 2;
+    }
   }
 }
 
-
-.saving-description {
-  font-size: (16vw / $fs-ratio);
-  line-height: 22px;
+.offer-text {
   margin-top: 16px;
-  margin-bottom: 48px;
-
-  @media (min-width: $container-max-width) {
-    font-size: 16px;
-  }
-}
-
-
-button {
-  max-width: 305px;
+  margin-bottom: 3rem;
 }

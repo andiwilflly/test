@@ -2,7 +2,7 @@
 
 
 .offers-slider {
-  margin-bottom: 79px;
+  margin-bottom: 85px;
   position: relative;
 }
 
@@ -42,7 +42,7 @@
   .slider-control-centerright,
   .slider-control-centerleft {
     top: auto !important;
-    bottom: -95px;
+    bottom: -98px;
 
     button {
       transform: translate(0, 0);
@@ -82,7 +82,7 @@
   .offers-slider-counter {
     position: absolute;
     pointer-events: none;
-    bottom: -79px;
+    bottom: -80px;
     color: $black-light;
     width: 192px;
     height: 32px;
