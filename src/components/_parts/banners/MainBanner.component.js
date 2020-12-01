@@ -1,8 +1,12 @@
 import React from "react";
 // MobX
 import { observer } from "mobx-react";
+// Store
+import store from "src/store";
 // Styles
 import "src/styles/scoped/banners/MainBanner.scoped.scss";
+// Utils
+import { disableScroll, enableScroll } from "src/utils/scroll.utils";
 // Components
 import Img from "src/components/_parts/Img.component";
 
@@ -22,17 +26,20 @@ class MainBanner extends React.Component {
 	}
 
 
-	onScroll = (e)=> {
+	onScroll = async (e)=> {
+		if(window._scrollDisabled) return;
 
-		console.log('=>', e.deltaY, window.scrollY);
 		if(window.scrollY <= window.innerHeight - this.headerHeight) {
 
-			console.log('SCROLL TO', e.deltaY > 0 ? window.innerHeight - this.headerHeight : 0);
-
+			disableScroll();
 			window.scrollTo({
 				top: e.deltaY > 0 ? window.innerHeight - this.headerHeight : 0,
 				behavior: "smooth"
 			});
+
+			await store.sleep(500);
+			enableScroll();
+
 		}
 	};
 
