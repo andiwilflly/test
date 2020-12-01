@@ -1,3 +1,4 @@
+import i18next from 'i18next';
 // MobX
 import { types } from 'mobx-state-tree';
 // Utils
@@ -25,6 +26,12 @@ const actions = (store)=> {
 
         onWindowResize() {
             if(store.settings.breakpoint !== store.breakpoint) store.update({ breakpoint: getBreakpoint.breakpoint });
+        },
+
+
+        setLang(lang) {
+            store.update({ lang });
+            i18next.changeLanguage(lang);
         },
 
 

@@ -49,9 +49,11 @@ class Dropdown extends React.Component {
 
 				{ this.dropdown.isOpen ?
 					<div className={ `dropdown-items bg-white` }>
-						{ this.props.items.map(item => this.props.renderItem(item)) }
+						{ this.props.items.map((item, i)=> <div key={i} className="dropdown-item" onClick={ this.onClick }>{ this.props.renderItem(item) }</div>) }
 					</div>
 					: null }
+
+				{ this.dropdown.isOpen ? <div className='overlay' onClick={ this.onClick } /> : null }
 			</div>
 		);
 	}

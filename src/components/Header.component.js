@@ -31,10 +31,6 @@ class Header extends React.Component {
     @computed get controlsWidth() { return this.search.isOpen ? this.controlsDefaultWidth + this.searchWidth - 24 : this.controlsDefaultWidth; };
 
 
-    // changeLang = (lang)=> ()=> {
-    //     i18next.changeLanguage(lang);
-    // };
-
     onSearchClick = (e)=> {
         e.preventDefault();
 
@@ -42,10 +38,10 @@ class Header extends React.Component {
     };
 
 
-    renderDropdownItem = (item)=> {
+    renderDropdownItem = (lang)=> {
         return (
-            <div key={item} onClick={ ()=> console.log('keke!', item) }>
-                { item }
+            <div className='clickable uppercase text-sm' onClick={ ()=> store.setLang(lang) }>
+                { lang }
             </div>
         );
     };
