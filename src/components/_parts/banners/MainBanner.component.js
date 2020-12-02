@@ -50,6 +50,7 @@ class MainBanner extends React.Component {
 			} else {
 				console.log('END ERROR');
 				//this.scrollTo();
+				this.isScrolling = false;
 			}
 		});
 	}
