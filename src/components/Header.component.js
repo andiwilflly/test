@@ -59,7 +59,7 @@ class Header extends React.Component {
 
                             <div className='nowrap flex justify-between items-center'>
                                 <Img src={`${process.env.PUBLIC_URL}/svg/location.svg`} className="animate-bounce text-black_light" width={18} height={24} />
-                                <div className="ml-2"><T>Львов</T></div>
+                                <div className="ml-2"><T>Львов</T>.</div>
                             </div>
                         </div>
 
