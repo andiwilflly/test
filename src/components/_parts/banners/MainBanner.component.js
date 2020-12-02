@@ -45,7 +45,7 @@ class MainBanner extends React.Component {
 		if((wHeight - this.headerHeight) <= scrollTop) console.log('STOP! ->>>');
 		if((wHeight - this.headerHeight) <= scrollTop) return this.isScrolling = false;
 
-		console.log('START ->>>', wHeight, window.pageYOffset || document.documentElement.scrollTop);
+		console.log('START ->>>', (wHeight - this.headerHeight), window.pageYOffset || document.documentElement.scrollTop);
 
 		animateScrollTo(wHeight - this.headerHeight).then(hasScrolledToPosition => {
 			if (hasScrolledToPosition) {
