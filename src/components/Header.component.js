@@ -91,9 +91,11 @@ class Header extends React.Component {
                                 <Img src={`${process.env.PUBLIC_URL}/svg/profile.svg`} className="text-black_light" width={24} height={24} />
                             </Link>
 
-                            <Dropdown title={ <div className="mr-1">{ store.lang }</div> }
-                                      items={ ['en', 'ua', 'ru'] }
-                                      renderItem={ this.renderDropdownItem } />
+                            <div style={{ width: 55 }}>
+                                <Dropdown title={ <div className="mr-1">{ store.lang }</div> }
+                                          items={ ['en', 'ua', 'ru'] }
+                                          renderItem={ this.renderDropdownItem } />
+                            </div>
                         </div>
                     </div>
                 </header>

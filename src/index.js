@@ -8,8 +8,8 @@ import App from './App';
 // Styles
 import "styles/index.scss";
 
-import smoothScroll from 'smoothscroll-polyfill';
-smoothScroll.polyfill();
+// import smoothScroll from 'smoothscroll-polyfill';
+// smoothScroll.polyfill();
 
 
 ReactDOM.render(

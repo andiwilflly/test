@@ -1,4 +1,5 @@
 import React from "react";
+import animateScrollTo from 'animated-scroll-to';
 // MobX
 import { observer } from "mobx-react";
 // Styles
@@ -12,6 +13,7 @@ class MainBanner extends React.Component {
 
 	lastScrollTop = undefined;
 	headerHeight = 82;
+	isScrolling = false;
 
 
 	componentDidMount() {
@@ -28,9 +30,29 @@ class MainBanner extends React.Component {
 		const isBottom = this.lastScrollTop === undefined ? true : scrollTop > this.lastScrollTop;
 		this.lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
 		if(!isBottom) return;
-		if(scrollTop > 10) return;
-		this.scrollBot();
+		if(scrollTop > 20) return;
+		if(this.isScrolling) return;
+		//this.scrollBot();
+
+		console.log('START')
+		this.isScrolling = true;
+		this.scrollTo();
 	};
+
+
+	scrollTo() {
+		const wHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+		animateScrollTo(wHeight - this.headerHeight).then(hasScrolledToPosition => {
+
+			if (hasScrolledToPosition) {
+				console.log('END');
+				this.isScrolling = false;
+			} else {
+				console.log('END ERROR');
+				this.scrollTo();
+			}
+		});
+	}
 
 
 	scrollBot = ()=> {
