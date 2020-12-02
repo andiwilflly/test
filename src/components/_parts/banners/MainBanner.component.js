@@ -49,7 +49,7 @@ class MainBanner extends React.Component {
 				this.isScrolling = false;
 			} else {
 				console.log('END ERROR');
-				this.scrollTo();
+				//this.scrollTo();
 			}
 		});
 	}
