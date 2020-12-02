@@ -34,7 +34,7 @@ class MainBanner extends React.Component {
 		if(this.isScrolling) return;
 		//this.scrollBot();
 
-		console.log('START')
+		console.log('START', scrollTop)
 		this.isScrolling = true;
 		this.scrollTo();
 	};
