@@ -43,7 +43,6 @@ class MainBanner extends React.Component {
 	scrollTo() {
 		const wHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 		animateScrollTo(wHeight - this.headerHeight).then(hasScrolledToPosition => {
-
 			if (hasScrolledToPosition) {
 				console.log('END');
 				this.isScrolling = false;
