@@ -33,13 +33,13 @@ class MainBanner extends React.Component {
 	};
 
 
-	scrollBot() {
+	scrollBot = ()=> {
 		const wHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 		window.scrollTo({
 			top: wHeight - this.headerHeight,
 			behavior: "smooth"
 		});
-	}
+	};
 
 
 	render() {
@@ -63,7 +63,7 @@ class MainBanner extends React.Component {
 							ресторана своего города со скидкой до - 80%.
 						</div>
 
-						<button className="button">Заказать</button>
+						<button className="button" onClick={ this.scrollBot }>Заказать</button>
 					</div>
 				</div>
 
