@@ -42,8 +42,8 @@ class MainBanner extends React.Component {
 	scrollTo() {
 		const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 		const wHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-		if(wHeight <= scrollTop) console.log('STOP! ->>>');
-		if(wHeight <= scrollTop) return this.isScrolling = false;
+		if((wHeight - this.headerHeight) <= scrollTop) console.log('STOP! ->>>');
+		if((wHeight - this.headerHeight) <= scrollTop) return this.isScrolling = false;
 
 		console.log('START ->>>', wHeight, window.pageYOffset || document.documentElement.scrollTop);
 
