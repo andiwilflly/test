@@ -77,7 +77,7 @@ class MainBanner extends React.Component {
 							ресторана своего города со скидкой до - 80%.
 						</div>
 
-						<button className="button" onClick={}>Заказать</button>
+						<button className="button">Заказать</button>
 					</div>
 				</div>
 
