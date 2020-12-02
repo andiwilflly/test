@@ -1,12 +1,8 @@
 import React from "react";
 // MobX
 import { observer } from "mobx-react";
-// Store
-import store from "src/store";
 // Styles
 import "src/styles/scoped/banners/MainBanner.scoped.scss";
-// Utils
-import { disableScroll, enableScroll } from "src/utils/scroll.utils";
 // Components
 import Img from "src/components/_parts/Img.component";
 
@@ -28,32 +24,22 @@ class MainBanner extends React.Component {
 
 
 	onScroll = async (e)=> {
-		const wHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 		const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-		const isBottom = this.lastScrollTop === undefined ? false : scrollTop > this.lastScrollTop;
-
+		const isBottom = this.lastScrollTop === undefined ? true : scrollTop > this.lastScrollTop;
 		this.lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
-
-		if(window._scrollDisabled) return;
-
-		console.log('START', isBottom);
-
-		if(scrollTop <= wHeight - this.headerHeight) {
-
-			console.log(scrollTop, this.lastScrollTop, 'top?');
-
-			disableScroll();
-			window.scrollTo({
-				top: isBottom ? wHeight - this.headerHeight : 0,
-				behavior: "smooth"
-			});
-
-			await store.sleep(700);
-			enableScroll();
-			console.log('END');
-		}
+		if(!isBottom) return;
+		if(scrollTop > 10) return;
+		this.scrollBot();
 	};
 
+
+	scrollBot() {
+		const wHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+		window.scrollTo({
+			top: wHeight - this.headerHeight,
+			behavior: "smooth"
+		});
+	}
 
 
 	render() {
