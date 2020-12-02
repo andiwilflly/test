@@ -26,7 +26,9 @@ class MainOffersSavingSlider extends React.Component {
                     <div />
                     <div>
                         <div className="text-lg font-gotham font-semibold">С нами ты экономишь</div>
-                        <div className="offer-text text-base">текст текст текст текст текстте ксттек сттекстте  текстте ксттек сттекстте кс кстт ексттекстте ксттекстте ксттекстте ксттекст</div>
+                        <div className="offer-text text-base">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </div>
                         <button className="button">Смотреть все</button>
                     </div>
                 </div>

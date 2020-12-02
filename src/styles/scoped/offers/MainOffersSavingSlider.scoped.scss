@@ -24,7 +24,7 @@
     grid-column-gap: 20px;
     grid-row-gap: 20px;
 
-    & > div:first-child{
+    & > div:first-child {
       order: 2;
     }
   }
@@ -32,5 +32,13 @@
 
 .offer-text {
   margin-top: 16px;
-  margin-bottom: 3rem;
+  margin-bottom: 3em;
+
+  //@include tablet {
+  //  margin-bottom: 40px;
+  //}
+  //
+  //@include mobile {
+  //  margin-bottom: 30px;
+  //}
 }

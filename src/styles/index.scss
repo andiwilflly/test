@@ -30,17 +30,11 @@
 
 html {
     height: 100%;
-}
-
-body {
-    font-family: 'Noto Sans', sans-serif;
     font-size: 16px;
-    height: 100%;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background: $white-mid;
-    overflow-y: scroll;
-    letter-spacing: 1px;
+
+    @include desktop {
+        font-size: 14px;
+    }
 
     @include tablet {
         font-size: 12px;
@@ -49,6 +43,16 @@ body {
     @include mobile {
         font-size: 10px;
     }
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: $white-mid;
+    overflow-y: scroll;
+    letter-spacing: 1px;
 }
 
 
