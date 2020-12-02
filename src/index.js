@@ -8,11 +8,8 @@ import App from './App';
 // Styles
 import "styles/index.scss";
 
-
-window.onerror = function(errorMsg, url, lineNumber) {
-    document.body.innerHTML = `<div style="padding: 20px; color: red">${errorMsg}</div>`;
-    return false;
-};
+import smoothScroll from 'smoothscroll-polyfill';
+smoothScroll.polyfill();
 
 
 ReactDOM.render(

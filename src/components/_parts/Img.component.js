@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { ResizeObserver } from '@juggle/resize-observer';
 // MobX
 import { observer } from "mobx-react";
 import { observable } from "mobx";
@@ -42,7 +43,7 @@ class ImgComponent extends React.Component {
 
 
     componentDidMount() {
-        if(this.props.heightRatio && window.ResizeObserver) this.observeHeightRatio();
+        if(this.props.heightRatio) this.observeHeightRatio();
         //this.observeScroll();
 
         this.img.isReady = true;
@@ -50,7 +51,7 @@ class ImgComponent extends React.Component {
     }
 
     componentWillUnmount() {
-        if(this.props.heightRatio && window.ResizeObserver) this.resizeObserver.unobserve(this.$img.current);
+        if(this.props.heightRatio) this.resizeObserver.unobserve(this.$img.current);
         //this.scrollObserver.unobserve(this.$img.current);
     }
 
@@ -59,8 +60,9 @@ class ImgComponent extends React.Component {
 
 
     observeHeightRatio() {
-        this.resizeObserver = new window.ResizeObserver(entries => {
+        this.resizeObserver = new ResizeObserver(entries => {
             window.requestAnimationFrame(() => {
+                console.log(entries, '422');
                 if (!Array.isArray(entries) || !entries.length) return;
                 this.img.height = entries[0].contentRect.width * this.props.heightRatio;
             });
