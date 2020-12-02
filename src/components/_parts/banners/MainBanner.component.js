@@ -34,13 +34,13 @@ class MainBanner extends React.Component {
 		if(this.isScrolling) return;
 		//this.scrollBot();
 
-		console.log('START', scrollTop)
 		this.isScrolling = true;
 		this.scrollTo();
 	};
 
 
 	scrollTo() {
+		console.log('START ->>>', window.pageYOffset || document.documentElement.scrollTop);
 		const wHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 		animateScrollTo(wHeight - this.headerHeight).then(hasScrolledToPosition => {
 			if (hasScrolledToPosition) {
@@ -48,8 +48,7 @@ class MainBanner extends React.Component {
 				this.isScrolling = false;
 			} else {
 				console.log('END ERROR');
-				//this.scrollTo();
-				this.isScrolling = false;
+				this.scrollTo();
 			}
 		});
 	}
