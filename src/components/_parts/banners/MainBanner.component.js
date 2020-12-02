@@ -14,32 +14,43 @@ import Img from "src/components/_parts/Img.component";
 @observer
 class MainBanner extends React.Component {
 
+	lastScrollTop = undefined;
 	headerHeight = 82;
 
 
 	componentDidMount() {
-		window.addEventListener('wheel', this.onScroll);
+		window.addEventListener('scroll', this.onScroll);
 	}
 
 	componentWillUnmount() {
-		window.removeEventListener('wheel', this.onScroll);
+		window.removeEventListener('scroll', this.onScroll);
 	}
 
 
 	onScroll = async (e)=> {
+		const wHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+		const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+		const isBottom = this.lastScrollTop === undefined ? false : scrollTop > this.lastScrollTop;
+
+		this.lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+
 		if(window._scrollDisabled) return;
 
-		if(window.scrollY <= window.innerHeight - this.headerHeight) {
+		console.log('START', isBottom);
+
+		if(scrollTop <= wHeight - this.headerHeight) {
+
+			console.log(scrollTop, this.lastScrollTop, 'top?');
 
 			disableScroll();
 			window.scrollTo({
-				top: e.deltaY > 0 ? window.innerHeight - this.headerHeight : 0,
+				top: isBottom ? wHeight - this.headerHeight : 0,
 				behavior: "smooth"
 			});
 
-			await store.sleep(500);
+			await store.sleep(700);
 			enableScroll();
-
+			console.log('END');
 		}
 	};
 
@@ -66,7 +77,7 @@ class MainBanner extends React.Component {
 							ресторана своего города со скидкой до - 80%.
 						</div>
 
-						<button className="button">Заказать</button>
+						<button className="button" onClick={}>Заказать</button>
 					</div>
 				</div>
 
